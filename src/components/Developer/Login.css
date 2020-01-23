@@ -1,0 +1,59 @@
+.loginMain {
+  background: -webkit-gradient(linear, left top, right top, from(navy), color-stop(red), to(navy));
+  background: linear-gradient(to right, navy, red, navy);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginCard {
+  padding-top: 10px;
+  height: 50%;
+  width: 25%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.loginCard input {
+  height: 50%;
+  width: 75%;
+  margin: 0% 0% 0% 12.5%;
+  border-radius: 5%;
+}
+
+.loginCard button {
+  height: 25%;
+  width: 50%;
+  margin: 0% 0% 0% 25%;
+  border-radius: 5%;
+  font-family: 'Bangers', cursive;
+  font-size: 1.5em;
+  border: none;
+}
+
+.loginCard button:hover {
+  background: black;
+  border: none;
+  color: white;
+}
+
+.logoSection {
+  border: 1px solid white;
+  height: 20vh;
+  width: 12.5vw;
+  position: absolute;
+  top: 0px;
+  left: 600px;
+  margin: 10px 0px 10px 0px;
+  background-image: url("./../../assets//Logo.png");
+}
+/*# sourceMappingURL=Login.css.map */

@@ -42,4 +42,10 @@ Router.route("/").get((req, res) => {
     .catch(err => res.json(err))
 })
 
+Router.route("/Delete/:product_id").delete((req, res) => {
+    Products.deleteOne({_id: req.params.product_id})
+    .then(res => res.json("Product deleted"))
+    .catch(err => res.json(err))
+})
+
 module.exports = Router;

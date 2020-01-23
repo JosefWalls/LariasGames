@@ -24,8 +24,10 @@ app.use(session({
 }))
 
 const ProductRouter = require("./routes/Products");
+const DeveloperRouter = require("./routes/Developer");
 
 app.use("/Product", ProductRouter);
+app.use("/Developer", DeveloperRouter);
 
 
 app.listen(4040, () => console.log("Port 4040"))
