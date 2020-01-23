@@ -1,0 +1,97 @@
+.portfolioCard {
+  background: navy;
+  height: 100vh;
+  margin-bottom: 100vh;
+}
+
+.recentProducts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recentProducts h2 {
+  margin-left: 10px;
+}
+
+.recentProductcard {
+  border: 1px solid rgba(155, 155, 155, 0.2);
+  width: 25%;
+  height: 40vh;
+  margin: 20px 20px 20px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.portfolioTitled {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 2px 2px black;
+  padding-top: 2.5vh;
+}
+
+.recentProductcard header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2em;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 5px;
+  text-shadow: 2px 2px black;
+}
+
+.recentProductcard img {
+  border: 1px solid red;
+  height: 75%;
+  width: 75%;
+  margin: 10px 0px 10px 40px;
+}
+
+.productCategories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.productCategory {
+  border-radius: 5%;
+  background: grey;
+  width: 20%;
+  margin: 2% 1% 2% 1%;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+}
+
+.productCategory:hover {
+  background: orangered;
+}
+/*# sourceMappingURL=Portfolio.css.map */
