@@ -2,6 +2,7 @@ import React from "react";
 import "./Portfolio.css";
 import {connect} from "react-redux";
 import {getAllProducts} from "./../redux/reducers/Product";
+import {Link} from "react-router-dom";
 
 class Portfolio extends React.Component {
     constructor(){
@@ -16,14 +17,15 @@ class Portfolio extends React.Component {
 
     render() {
         const recentProducts = this.props.products.map((val, i) => {
+            while(i >= this.props.products.length - 3){
             return (
                 <div className="recentProductcard">
                     <header>
                         <h1>{val.Title}</h1>
                     </header>
-                    <img src=""></img>
+                    <img src={val.Header}></img>
                 </div>
-            )
+            )}
         })
         return (
             <div className="portfolioCard">
@@ -38,7 +40,9 @@ class Portfolio extends React.Component {
                 </header>
                     <div className="productCategories">
                         <div className="productCategory">
-                            <h5>Scenario Packs</h5>
+                            <Link to="/Scenarios">
+                                <h5>Scenario Packs</h5>
+                            </Link>
                         </div>
                         <div className="productCategory">
                             <h5>Routes</h5>

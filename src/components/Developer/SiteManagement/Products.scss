@@ -1,0 +1,50 @@
+.productMain {
+    background: linear-gradient(to right , navy, red, navy);
+}
+
+.productMain section {
+    padding: 10px 5px 0px 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    background: grey;
+}
+
+.addProduct {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.addProduct h2 {
+    font-size: 1.5em;
+    font-family: 'Bangers', cursive;
+    color: white;
+}
+
+.productMain section input, .productMain section select , .productMain section textarea, .productMain section button{
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 5px;
+    border: none;
+    padding: 5px 5px 5px 5px;
+}
+
+.productMain section select {
+    width: 77.5%;
+    margin-bottom: 5px;
+}
+
+.productMain section button {
+    width: 77.5%;
+    margin-bottom: 5px;
+}
+
+.productMain section button:hover {
+    color: white;
+    background: orangered;
+    text-shadow: 1px 1px black;
+}
+
+#descriptionBox {
+    height: 200px;
+}

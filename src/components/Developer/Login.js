@@ -2,6 +2,7 @@ import React from "react";
 import {connect} from "react-redux";
 import {updateState, loginDeveloper} from "../../redux/reducers/Developer";
 import "./Login.css";
+import {Link} from "react-router-dom";
 
 class Login extends React.Component {
     constructor(){
@@ -27,7 +28,9 @@ class Login extends React.Component {
     render() {
         return (
             <div className="loginMain">
+                <Link to="/">
                 <div className="logoSection"/>
+                </Link>
                 <div className="loginCard">
                     <input placeholder="Username" name="Username" onChange={this.handleChange}></input>
                     <input placeholder="Password" name="Password" onChange={this.handleChange}></input>
