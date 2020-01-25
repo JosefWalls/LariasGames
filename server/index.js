@@ -23,10 +23,10 @@ app.use(session({
     resave: false
 }))
 
-const ProductRouter = require("./routes/Products");
+const ScenarioRouter = require("./routes/Scenarios");
 const DeveloperRouter = require("./routes/Developer");
 
-app.use("/Product", ProductRouter);
+app.use("/Scenarios", ScenarioRouter);
 app.use("/Developer", DeveloperRouter);
 
 

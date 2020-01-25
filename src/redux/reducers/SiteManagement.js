@@ -8,7 +8,7 @@ const initialState = {
     Description: "",
     Header: "",
     Images: [],
-    Features: "",
+    Features: [],
     Publisher: "",
     Price: 0,
     Link: "",
@@ -26,10 +26,10 @@ export const updateState = (e) => {
     }
 }
 
-export const addProduct = (Title, Category, Description, Header, Images, Features, Publisher, Price, Link) => {
+export const addProduct = (Title, Category, Description, Header, Images, Features, Publisher, Price, Link, Country) => {
     return {
         type: ADD_PRODUCT,
-        payload: axios.post("/Product/Add", {
+        payload: axios.post("/Scenarios/Add", {
             Title: Title,
             Category: Category,
             Description: Description,
@@ -38,7 +38,8 @@ export const addProduct = (Title, Category, Description, Header, Images, Feature
             Publisher: Publisher,
             Price: Price,
             Link: Link,
-            Header: Header
+            Header: Header,
+            Country: Country
         })
     }
 }

@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const ProductSchema = new mongoose.Schema({
+const ScenarioSchema = new mongoose.Schema({
     Title: {
         type: String,
         default: ""
@@ -22,8 +22,8 @@ const ProductSchema = new mongoose.Schema({
         default: []
     },
     Features: {
-        type: String,
-        default: ""
+        type: [],
+        default: []
     },
     Publisher: {
         type: String,
@@ -48,4 +48,4 @@ const ProductSchema = new mongoose.Schema({
 })
 
 
-module.exports = mongoose.model("Product", ProductSchema);
+module.exports = mongoose.model("Scenario", ScenarioSchema);
