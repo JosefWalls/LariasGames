@@ -1,7 +1,8 @@
 import React from "react";
 import {connect} from "react-redux";
-import {getAllScenarios, updateState, filterScenariosCountry} from "./../redux/reducers/Product";
+import {getAllScenarios, updateState} from "./../redux/reducers/Product";
 import "./Scenarios.css";
+import {Link} from "react-router-dom";
 
 class Scenarios extends React.Component {
     constructor(){
@@ -9,17 +10,10 @@ class Scenarios extends React.Component {
     }
 
     componentDidMount = async () => {
-        if(this.props.products.length === 0){
-            await this.props.getAllScenarios();
-        }
+        await this.props.getAllScenarios();
         console.log(this.props.products)
     }
 
-
-    selectCountry = async (e) => {
-        await this.props.filterScenariosCountry(e.target.value);
-        window.location.reload();
-    }
 
     render() {
         const mappedProducts = this.props.products.map((val, i) => {
@@ -29,20 +23,21 @@ class Scenarios extends React.Component {
                         <h1>{val.Title}</h1>
                     </header>
                     <img src={val.Header}></img>
-                    <h6>{val.price}</h6>
+                    <section>
+                        <h6>${val.Price}</h6>
+                        <Link to={`/Scenario/${val._id}`}>
+                            <button>View Scenario Pack</button>
+                        </Link>
+                    </section>
                 </div>
             )
         })
         return (
-            <div className="productMain">
-                <select onChange={this.selectCountry}>
-                    <option>---</option>
-                    <option value="United States">United States</option>
-                    <option value="Great Britian">Great Britian</option>
-                    <option value="Germany">Germany</option>
-                </select>
+            <div className="productPage">
+                <div className="scenarioPage">
                 <div className="productCard">
                     {mappedProducts}
+                </div>
                 </div>
             </div>
         )
@@ -55,4 +50,4 @@ const mapStateToprops = reduxState => {
     }
 }
 
-export default connect(mapStateToprops, {getAllScenarios, updateState, filterScenariosCountry})(Scenarios);
+export default connect(mapStateToprops, {getAllScenarios, updateState})(Scenarios);

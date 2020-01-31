@@ -12,13 +12,15 @@ const initalState = {
     Price: 0,
     Link: "",
     Country: "",
-    filterCountry: ""
+    filterCountry: "",
+    product: []
 }
 
 const GET_ALL_PRODUCTS = "GET_ALL_PRODUCTS";
 const UPDATE_STATE = "UPDATE_STATE";
 const GET_ALL_SCENARIOS = "GET_ALL_SCENARIOS";
 const FILTER_SCENARIOS_COUNTRY = "FILTER_SCENARIOS_COUNTRY";
+const GET_SCENARIO = "GET_SCENARIO";
 
 export const getAllProducts = () => {
     return {
@@ -41,10 +43,10 @@ export const getAllScenarios = () => {
     }
 }
 
-export const filterScenariosCountry = (country) => {
+export const getScenario = (scenarioId) => {
     return {
-        type: FILTER_SCENARIOS_COUNTRY,
-        payload: Axios.get(`/Scenarios/Filter/${country}`)
+        type: GET_SCENARIO,
+        payload: Axios.get(`/Scenarios/${scenarioId}`)
     }
 }
 
@@ -59,10 +61,10 @@ export default function reducer (state = initalState, action){
             return {...state, loading: true}
         case `${GET_ALL_SCENARIOS}_FULFILLED`:
             return {...state, loading: false, products: payload.data}
-        case `${FILTER_SCENARIOS_COUNTRY}_PENDING`:
+        case `${GET_SCENARIO}_PENDING`:
             return {...state, loading: true}
-        case `${FILTER_SCENARIOS_COUNTRY}_FULFILLED`:
-            return {...state, loading: false, products: payload.data}
+        case `${GET_SCENARIO}_FULFILLED`:
+            return {...state, loading: false, product: payload.data}
         case `${UPDATE_STATE}`:
             return {...state, ...payload}
         default:

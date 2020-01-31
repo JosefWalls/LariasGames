@@ -28,30 +28,18 @@ Router.route("/Add").post((req, res) => {
 
 
 Router.route("/").get((req, res) => {
-    console.log("gettign")
+    console.log("All scenarios")
     Scenario.find({Category: "Scenario"})
     .then(scenarios => res.json(scenarios))
     .catch(err => res.json(err))
 })
 
-Router.route("/Routes").get((req, res) => {
-    Scenario.find({Category: "Route"})
-    .then(routes => res.json(routes))
-    .catch(err => res.json(err))
-})
-
-Router.route("/Filter/:country").get((req, res) => {
-    const country = req.params.country;
-    console.log(country)
-    Scenario.find({Country: country})
-    .then(scenarios => res.status(200).json(scenarios))
+Router.route("/:scenario_id").get((req, res) => {
+    const scenarioId = req.params.scenario_id; 
+    console.log(scenarioId)
+    Scenario.find({_id: scenarioId})
+    .then(scenario => res.status(200).json(scenario))
     .catch(err => res.status(403).json(err))
-})
-
-Router.route("/Delete/:product_id").delete((req, res) => {
-    Scenario.deleteOne({_id: req.params.product_id})
-    .then(res => res.json("Product deleted"))
-    .catch(err => res.json(err))
 })
 
 module.exports = Router;

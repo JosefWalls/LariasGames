@@ -11,6 +11,7 @@ class Portfolio extends React.Component {
 
     componentDidMount = async () => {
         await this.props.getAllProducts();
+        console.log("portfolio")
         console.log(this.props.products)
     }
 

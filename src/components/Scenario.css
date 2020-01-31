@@ -1,0 +1,45 @@
+.scenarioCard {
+  background: grey;
+}
+
+.scenarioProductCard {
+  border: 1px solid red;
+}
+
+.scenarioProductCard header {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bolder;
+  margin-top: 1%;
+}
+
+#publisher, #price, #productId {
+  margin: 1% 0% 1% 2%;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#price {
+  border: 2px solid black;
+  background: white;
+  color: black;
+  width: 5%;
+  padding: 1% 0% 1% 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#productId {
+  font-size: 0.75em;
+}
+/*# sourceMappingURL=Scenario.css.map */

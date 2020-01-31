@@ -1,42 +1,56 @@
-.productMain {
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
+.scenarioPage {
+    margin: 0% 1.5% 0% 1.5%;
+    padding: 5% 5% 5% 5%;
 }
-.productMain select {
-    position: absolute;
-    top: 0px;
+
+.productPage {
+    background: grey;
 }
 
 .productCard {
-    border: 1px solid white;
+    background: white;
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    width: 75%;
-    margin-bottom: 10%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .individualProduct {
-    border: 1px solid rgb(155, 155, 155);
-    height: 40vh;
-    margin: 10px 10px 0px 10px;
-    background: grey;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-shadow: 1px 1px black;
-    font-size: 1.5em;
-    padding: 1% 1% 1% 1%;
-}
-
-.individualProduct header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 1px solid grey;
+    width: 75%;
+    margin: 10px 12.5% 10px 12.5%;
 }
 
 .individualProduct img {
+    height: 150px ;
     width: 100%;
-    height: 75%;
+}
+
+.individualProduct header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 1% 1% 1% 1%;
+}
+
+.individualProduct section {
+    display: flex;
+    margin: 1% 1% 1% 1%;
+}
+
+.individualProduct section  button {
+    margin-left: 10%;
+    border: none;
+    border-radius: 7.5%;
+    background: orangered;
+    height: 100%;
+    width: 150px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.individualProduct section button:hover {
+    background: white;
+    border: 1px solid orangered;
+}
+
+.individualProduct img:hover {
+    opacity: 0.5;
 }
