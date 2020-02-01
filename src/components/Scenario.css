@@ -1,9 +1,14 @@
 .scenarioCard {
   background: grey;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.scenarioProductCard {
-  border: 1px solid red;
+.scenarioCard section {
+  margin: 0% 5% 5% 5%;
+  padding-bottom: 5%;
+  padding-top: 2.5%;
+  background: #9b9b9b;
 }
 
 .scenarioProductCard header {
@@ -16,7 +21,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: bolder;
+  font-size: 1.5em;
   margin-top: 1%;
+  margin-bottom: 2.5%;
 }
 
 #publisher, #price, #productId {
@@ -41,5 +48,77 @@
 
 #productId {
   font-size: 0.75em;
+}
+
+.scenarioProductCard section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scenarioProductCard section article {
+  border: 1px solid rgba(85, 85, 85, 0.377);
+  width: 50%;
+  margin: 0% 2.5% 0% 2.5%;
+  padding: 2% 2% 2% 2%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.scenarioProductCard section h3 {
+  padding-bottom: 2%;
+  color: white;
+  font-weight: normal;
+}
+
+#mappedFeaturesCard {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.mappedFeatures {
+  margin: 1% 0% 1% 25%;
+}
+
+.scenarioProductCard footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 5%;
+}
+
+.scenarioProductCard footer button {
+  border: none;
+  background: orangered;
+  height: 100%;
+  padding: 5% 5% 5% 5%;
+  color: white;
+}
+
+.scenarioProductCard footer button:hover {
+  color: black;
+  background: white;
+  opacity: 0.25;
+}
+
+.mappedScenarioImages {
+  border: 1px solid rgba(85, 85, 85, 0.377);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.mappedScenarioImages img {
+  height: 175px;
+  width: 250px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=Scenario.css.map */
