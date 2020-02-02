@@ -1,7 +1,6 @@
 import React from "react";
 import {connect} from "react-redux";
 import {updateState, addProduct} from "../../../redux/reducers/SiteManagement";
-import {getAllProducts} from "../../../redux/reducers/Product";
 import {storage} from "../../../firebase-config";
 import "./Products.css";
 
@@ -13,12 +12,6 @@ class Products extends React.Component {
             FeatureInput: ""
         }
     }
-
-    componentDidMount = async () => {
-        await this.props.getAllProducts();
-        console.log(this.props.products)
-    }
-
     handleInput = (e) => {
         if(e.target.name === "Features"){
             this.props.updateState({Features: this.props.Features.concat(e.target.value)})
@@ -86,14 +79,6 @@ class Products extends React.Component {
     }
 
     render() {
-        const mappedProducts = this.props.products.map((val, i) => {
-            return (
-                <div>
-                    <h1>{val.Title}</h1>
-                    <img src={val.Header}></img>
-                </div>
-            )
-        })
         return (
             <div className="">
                 <div className="">
@@ -124,8 +109,6 @@ class Products extends React.Component {
                     <button onClick={this.uploadScenarioPack}>Add Scenario Packv</button>
                 </section>: this.props.Category === "Route" ? <h1>Route</h1>: null}
                 </div>
-                <h1>Products Currently on Site</h1>
-                {mappedProducts}
             </div>
         )
     }
@@ -143,8 +126,8 @@ const mapStateToProps = reduxState => {
         Price: reduxState.SiteManagementReducer.Price,
         Link: reduxState.SiteManagementReducer.Link,
         Country: reduxState.SiteManagementReducer.Country,
-        products: reduxState.ProductReducer.products
+        scenarios: reduxState.ProductReducer.scenarios
     }
 }
 
-export default connect(mapStateToProps, {updateState, addProduct, getAllProducts})(Products);
+export default connect(mapStateToProps, {updateState, addProduct})(Products);

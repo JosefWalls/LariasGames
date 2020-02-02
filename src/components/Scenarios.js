@@ -11,12 +11,12 @@ class Scenarios extends React.Component {
 
     componentDidMount = async () => {
         await this.props.getAllScenarios();
-        console.log(this.props.products)
+        console.log(this.props.scenarios)
     }
 
 
     render() {
-        const mappedProducts = this.props.products.map((val, i) => {
+        const mappedProducts = this.props.scenarios.map((val, i) => {
             return (
                 <div className="individualProduct">
                     <header>
@@ -46,7 +46,7 @@ class Scenarios extends React.Component {
 
 const mapStateToprops = reduxState => {
     return {
-        products: reduxState.ProductReducer.products
+        scenarios: reduxState.ProductReducer.scenarios
     }
 }
 

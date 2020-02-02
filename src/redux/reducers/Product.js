@@ -3,7 +3,7 @@ import Axios from "axios";
 
 const initalState = {
     loading: false,
-    products: [],
+    product: [],
     Title: "",
     Category: "",
     Description: "",
@@ -13,21 +13,13 @@ const initalState = {
     Link: "",
     Country: "",
     filterCountry: "",
-    product: []
+    scenarios: []
 }
 
-const GET_ALL_PRODUCTS = "GET_ALL_PRODUCTS";
 const UPDATE_STATE = "UPDATE_STATE";
 const GET_ALL_SCENARIOS = "GET_ALL_SCENARIOS";
 const FILTER_SCENARIOS_COUNTRY = "FILTER_SCENARIOS_COUNTRY";
 const GET_SCENARIO = "GET_SCENARIO";
-
-export const getAllProducts = () => {
-    return {
-        type: GET_ALL_PRODUCTS,
-        payload: Axios.get("/Product/")
-    }
-}
 
 export const updateState = (e) => {
     return {
@@ -53,14 +45,10 @@ export const getScenario = (scenarioId) => {
 export default function reducer (state = initalState, action){
     const {type, payload} = action;
     switch(type){
-        case `${GET_ALL_PRODUCTS}_PENDING`:
-            return {...state, loading: true}
-        case `${GET_ALL_PRODUCTS}_FULFILLED`:
-            return {...state, loading: false, products: payload.data}
         case `${GET_ALL_SCENARIOS}_PENDING`:
             return {...state, loading: true}
         case `${GET_ALL_SCENARIOS}_FULFILLED`:
-            return {...state, loading: false, products: payload.data}
+            return {...state, loading: false, scenarios: payload.data}
         case `${GET_SCENARIO}_PENDING`:
             return {...state, loading: true}
         case `${GET_SCENARIO}_FULFILLED`:

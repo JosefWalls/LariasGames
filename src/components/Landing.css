@@ -1,6 +1,45 @@
 .landingCard {
-    border: 1px solid red;
     height: 100vh;
     margin-bottom: 100vh;
     background: grey;
+    padding-top: 10vh;
+}
+
+.landingScenario h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.landingScenario img {
+    height: 50%;
+    width: 50%;
+    border-radius: 5%;
+    box-shadow: 1px 1px 10px black;
+}
+
+.landingScenario {
+    margin-top: 1%;
+    animation-name: scenarioAnimation;
+    animation-delay: 0.5s;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+.landingScenarioInnerText {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+    border: 1px solid rgba(85, 85, 85, 0.377);
+}
+
+@keyframes scenarioAnimation {
+    0% {
+        position: relative;
+        left: 0%;
+    }
+    100% {
+        position: relative;
+        left: 25%;
+    }
 }
