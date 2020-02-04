@@ -4,25 +4,32 @@
 }
 
 .productPage {
-  background: grey;
+  background: url("./../assets/ScenarioBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .productCard {
   background: white;
+  -webkit-box-shadow: 1px 1px 40px black;
+          box-shadow: 1px 1px 40px black;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-bottom: 2.655%;
 }
 
 .individualProduct {
   border: 1px solid grey;
   width: 75%;
   margin: 10px 12.5% 10px 12.5%;
+  -webkit-box-shadow: 1px 12.5px 20px grey;
+          box-shadow: 1px 12.5px 20px grey;
 }
 
 .individualProduct img {
-  height: 125px;
+  height: 250px;
   width: 100%;
 }
 
@@ -57,5 +64,10 @@
 
 .individualProduct img:hover {
   opacity: 0.5;
+}
+
+#productPrice {
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }
 /*# sourceMappingURL=Scenarios.css.map */

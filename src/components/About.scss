@@ -1,127 +1,57 @@
 .aboutCard {
     height: 150vh;
     margin-bottom: 100vh;
-    background: rgb(185, 5, 5);
-    display: flex;
-    justify-content: center;
+    background: rgb(0, 0, 48);
 }
 
-.innerAbout {
-    margin-top: 5%;
-    padding: 5px 5px 5px 5px;
-    width: 50%;
-    margin-bottom: 5%;
-    border: 0.5px solid rgba(155, 155, 155, 0.123);
+.AboutInner:nth-child(1) {
+    padding-top: 1%;
 }
 
-.aboutCard h1 {
-    font-family: 'Bangers', cursive;
-    font-size: 2em;
-    padding: 20px 0px 20px 0px;
-    color: white;
-}
-
-.aboutCard h2 {
-    padding-top: 50px;
-    color: white;
-    padding-bottom: 10px;
-    font-size: 2em;
-    font-weight: bold;
+.AboutInner h1 {
+    font-size: 2.5em;
+    color: blue;
+    font-family: 'Roboto', sans-serif;
+    width: 25%;
+    padding: 1% 0% 1% 4%;
+    margin: 1% 1% 1% 1%;
+    border-top: 3px solid rgba(85, 85, 85, 0.377);
+    border-left: 3px solid rgba(85, 85, 85, 0.377);
 }
 
 .aboutInfo {
+    border-left: 3px solid rgba(85, 85, 85, 0.377);
+    border-bottom: 3px solid rgba(85, 85, 85, 0.377);
+    padding: 1% 0% 1% 4%;
+    margin: 0% 1% 1% 1%;
+}
+
+.aboutInfo h6, .aboutInfo p, .aboutInfo h5 {
     color: white;
-    margin-bottom: 10px;
-}
-
-.aboutInfo p {
     font-size: 1.5em;
-    text-shadow: 2px 2px black;
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 5%;
 }
 
-@mixin teamMemberNormal {
-    border: 1px solid rgb(155, 155, 155);
-    width: 50%;
-    position: relative;
-    left: 25%;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    transition-duration: 2s;
-    p {
-        display: none;
-    }
-    img {
-        border: 1px solid royalblue;
-        height: 25vh;
-        width: 50%;
-    }
-    h6 {
-        display: none;
-    }
-    h3 {
-        color: white;
-        text-shadow: 1px 1px black;
-        font-family: 'Roboto', sans-serif;
-        font-size: 2em;
-    }
+.aboutInfo h6 {
+    text-decoration: underline;
+    text-decoration-color: rgba(85, 85, 85, 0.377);
 }
 
-@mixin teamMemberOdd{
-    border: 1px solid rgb(155, 155, 155);
-    width: 50%;
-    position: relative;
-    left: 25%;
-    transition-duration: 2s;
-    h3 {
-        color: white;
-        text-shadow: 1px 1px black;
-        font-family: 'Roboto', sans-serif;
-        font-size: 2em;
-    }
-    p {
-        color: white;
-        display: block;
-    }
-    h6 {
-        display: block;
-    }
+.aboutInfo p:nth-child(2) {
+    margin-top: 1%;
 }
 
-@mixin teamMemberEven {
-    border: 1px solid rgb(155, 155, 155);
-    width: 50%;
-    position: relative;
-    left: 25%;
-    transition-duration: 2s;
-    h3 {
-        color: white;
-        text-shadow: 1px 1px black;
-        font-family: 'Roboto', sans-serif;
-        font-size: 2em;
-    }
-    p {
-        color: white;
-        display: block;
-    }
-    h6 {
-        display: block;
-        color: white;
-        text-shadow: 1px 1px black;
-        font-family: 'Roboto', sans-serif;
-        margin:5px 5px 5px 5px;
-    }
+.aboutInfo ul {
+    margin-top: 2%;
+    width: 20%;
+    border: 1px solid rgba(85, 85, 85, 0.377);
+    padding: 2% 2% 2% 2%;
+    background: rgba(85, 85, 85, 0.377);
 }
 
-.teamMember {
-    @include teamMemberNormal();
-}
-
-.teamMember:nth-child(odd):hover{
-    @include teamMemberOdd();
-}
-
-.teamMember:nth-child(even):hover{
-    @include teamMemberEven();
+.aboutInfo li {
+    margin: 1% 1% 1% 1%;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
 }

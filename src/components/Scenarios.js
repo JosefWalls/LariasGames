@@ -24,7 +24,6 @@ class Scenarios extends React.Component {
                     </header>
                     <img src={val.Header}></img>
                     <section>
-                        <h6>${val.Price}</h6>
                         <Link to={`/Scenario/${val._id}`}>
                             <button>View Scenario Pack</button>
                         </Link>

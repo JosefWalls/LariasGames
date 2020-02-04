@@ -23,7 +23,7 @@ class App extends React.Component {
       if(window.scrollY > 1500){
         this.setState({background: "backgroundTwo"})
       }
-      if (window.scrollY > 2800){
+      if (window.scrollY > 28500){
         this.setState({background: "backgroundThree"})
       }
     })

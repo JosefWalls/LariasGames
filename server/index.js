@@ -25,9 +25,11 @@ app.use(session({
 
 const ScenarioRouter = require("./routes/Scenarios");
 const DeveloperRouter = require("./routes/Developer");
+const RouteRouter = require("./routes/Route");
 
 app.use("/Scenarios", ScenarioRouter);
 app.use("/Developer", DeveloperRouter);
+app.use("/Routes", RouteRouter);
 
 
 app.listen(4040, () => console.log("Port 4040"))

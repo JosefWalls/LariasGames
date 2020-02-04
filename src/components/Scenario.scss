@@ -1,5 +1,7 @@
 .scenarioCard {
-    background: grey;
+    background: url("./../assets/ScenarioBackground.jpg");
+    background-repeat: no-repeat;
+    background-size:  100% 100%;;
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -93,11 +95,20 @@
 .mappedScenarioImages{
     border: 1px solid rgba(85, 85, 85, 0.377);
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-shadow: 1px 1px 10px rgba(85, 85, 85, 0.75);
 }
 
 .mappedScenarioImages img {
-    height: 175px;
-    width: 250px;
-    margin-right: 10px;
+    width: 50vw;
+    height: 50vh;
+}
+
+.scenarioProductCard main {
+    border: 1px solid rgba(85, 85, 85, 0.377);
+    display: flex;
+    justify-content: center;
+    padding: 1% 0% 1% 0%;
+    margin: 0% 20% 0% 20%;
+    box-shadow: 1px 1px 10px rgba(85, 85, 85, 0.75);
 }

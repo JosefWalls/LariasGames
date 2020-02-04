@@ -2,7 +2,19 @@
     height: 100vh;
     margin-bottom: 100vh;
     background: grey;
-    padding-top: 10vh;
+    padding-top: 7.5%;
+}
+
+#latestPack {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+}
+
+.landingCard header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5%;
 }
 
 .landingScenario h1 {
@@ -11,10 +23,14 @@
 }
 
 .landingScenario img {
-    height: 50%;
-    width: 50%;
+    height: 500px;
+    width: 500px;
     border-radius: 5%;
     box-shadow: 1px 1px 10px black;
+}
+
+.landingScenario img:hover {
+    opacity: 0.75;
 }
 
 .landingScenario {

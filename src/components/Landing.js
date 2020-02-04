@@ -1,7 +1,8 @@
 import React from "react";
 import "./Landing.css";
 import {connect} from "react-redux";
-import {getAllScenarios} from "./../redux/reducers/Product"
+import {getAllScenarios} from "./../redux/reducers/Product";
+import {Link} from "react-router-dom";
 
 class Landing extends React.Component {
     constructor(){
@@ -10,7 +11,6 @@ class Landing extends React.Component {
 
     componentDidMount = async () => {
         await this.props.getAllScenarios();
-        console.log(this.props.scenarios)
     }
 
     render() {
@@ -18,7 +18,9 @@ class Landing extends React.Component {
             while(i >= this.props.scenarios.length - 1){
                 return (
                     <div className="landingScenario" >
+                    <Link to={`/Scenario/${val._id}`}>
                             <img src={val.Header}></img>
+                    </Link>
                         <div className="landingScenarioInnerText">
                             <h1>{val.Title}</h1>
                         </div>
@@ -28,6 +30,9 @@ class Landing extends React.Component {
         })
         return (
             <div className="landingCard">
+                <header>
+                    <h1 id="latestPack">Our Latest Pack!</h1>
+                </header>
                 {mappedLatestScenario}
             </div>
         )
