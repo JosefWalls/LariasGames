@@ -1,8 +1,4 @@
-const path = require('path'); // Usually moved to the start of file
 
-app.get('*', (req, res)=>{
-    res.sendFile(path.join(__dirname, '../build/index.html'));
-});
 require("dotenv").config();
 const session = require("express-session");
 const express = require("express");
@@ -13,6 +9,12 @@ const massive = require("massive");
 
 app.use(express.json());
 app.use(cors());
+
+const path = require('path'); // Usually moved to the start of file
+
+app.get('*', (req, res)=>{
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+});
 
 const uri = process.env.AUTH_URI;
 mongoose.connect(uri, {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true});
