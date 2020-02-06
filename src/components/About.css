@@ -2,59 +2,82 @@
   height: 150vh;
   margin-bottom: 100vh;
   padding-top: 2%;
+  background: #c0bfbf;
+}
+
+.aboutMain header {
+  margin-left: 5%;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5em;
+  border-left: 5px solid orangered;
+  padding-left: 1%;
+}
+
+.aboutMain p {
+  -webkit-box-shadow: 1px 1px 40px black;
+          box-shadow: 1px 1px 40px black;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  padding: 1% 1% 1% 1%;
+  margin: 2.5% 5% 0% 5%;
+  text-shadow: 1px 1px grey;
   background: grey;
 }
 
-.AboutInner:nth-child(1) {
-  padding-top: 1%;
+.aboutMain p span {
+  font-weight: bold;
 }
 
-.AboutInner h1 {
-  font-size: 2.5em;
-  color: blue;
+.aboutUsCategories {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutUsCategories p {
+  background: -webkit-gradient(linear, left top, left bottom, from(#c0bfbf), to(white));
+  background: linear-gradient(#c0bfbf, white);
+  height: 25vh;
+  width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2% 2% 2% 2%;
+  color: black;
   font-family: 'Roboto', sans-serif;
-  width: 25%;
-  padding: 1% 0% 1% 4%;
-  margin: 1% 1% 1% 1%;
-  border-top: 3px solid rgba(85, 85, 85, 0.377);
-  border-left: 3px solid rgba(85, 85, 85, 0.377);
+  font-size: 2em;
+  font-weight: bold;
 }
 
-.aboutInfo {
-  border-left: 3px solid rgba(85, 85, 85, 0.377);
-  border-bottom: 3px solid rgba(85, 85, 85, 0.377);
-  padding: 1% 0% 1% 4%;
-  margin: 0% 1% 1% 1%;
-}
-
-.aboutInfo h6, .aboutInfo p, .aboutInfo h5 {
-  color: white;
-  font-size: 1.5em;
-  font-family: 'Roboto', sans-serif;
-}
-
-.aboutInfo h6 {
-  text-decoration: underline;
-  -webkit-text-decoration-color: rgba(85, 85, 85, 0.377);
-          text-decoration-color: rgba(85, 85, 85, 0.377);
-}
-
-.aboutInfo p:nth-child(2) {
-  margin-top: 1%;
-}
-
-.aboutInfo ul {
+.aboutPictures {
+  height: 45vh;
   margin-top: 2%;
-  width: 20%;
-  border: 1px solid rgba(85, 85, 85, 0.377);
-  padding: 2% 2% 2% 2%;
-  background: rgba(85, 85, 85, 0.377);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.aboutInfo li {
-  margin: 1% 1% 1% 1%;
-  color: white;
-  font-size: 1.5em;
-  font-family: 'Roboto', sans-serif;
+.aboutPictures section:nth-child(1) {
+  width: 25%;
+  background: url("./../assets/Me.JPG");
+  background-size: cover;
+  border-radius: 45%;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
 }
 /*# sourceMappingURL=About.css.map */

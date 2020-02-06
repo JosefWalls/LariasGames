@@ -2,6 +2,15 @@
   background: grey;
   height: 100vh;
   margin-bottom: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .productCategories {
@@ -23,7 +32,7 @@
           box-shadow: 1px 1px 20px #181818;
   font-size: 2em;
   height: 50vh;
-  width: 50%;
+  width: 50vw;
   background: url("./../assets/ScenarioPackHeader.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;

@@ -13,22 +13,23 @@ class About extends React.Component {
     render() {
         return (
             <div className="aboutCard" id="About">
-                <div className="AboutInner">
-                    <h1>About</h1>
-                    <div className="aboutInfo">
-                        <p>Welcome to Larias Games! We produce high quality add ons for Dovetail Games' Train Simulator 2020, with our scenario packs, and upcoming routes being published through several partners! Scroll down to our Portfolio to check out some of our previous projects!</p>
-                    </div>
+                <div className="aboutMain">
+                    <header>
+                        <h1>Who We Are</h1>
+                    </header>
+                    <p>We are proud to be apart of the Train Simulation community by contributing the best add-ons for users to enjoy.
+                    Founded in 2015 by Josef Walls, the goal of <span> Larias Games </span> is to produces awesome add-ons and contribute to projects where help is needed!
+                    We use programs such as 3DSMax and the in game tools to produce our add-ons. Josef Walls is a Developer during the day, producing Websites and Software
+                    in the Dallas - Fort Worth Metroplex.
+                    </p>
                 </div>
-                <div className="AboutInner">
-                    <h1>Our Partners</h1>
-                    <div className="aboutInfo">
-                        <h5>We have worked with numerous partners in our time of developing add-ons! Our partners include:</h5>
-                        <ul>
-                            <li>Trains and Drivers</li>
-                            <li>Dovetail Games</li>
-                            <li>Skyhook Games</li>
-                        </ul>
-                    </div>
+                <div className="aboutPictures">
+                    <section></section>
+                </div>
+                <div className="aboutUsCategories">
+                        <p>Scenarios / Activites</p>
+                        <p>Asset Creation</p>
+                        <p>Environments</p>
                 </div>
             </div>
         )

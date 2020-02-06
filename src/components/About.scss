@@ -2,58 +2,64 @@
     height: 150vh;
     margin-bottom: 100vh;
     padding-top: 2%;
-    background: grey;
-    // background: url("./../AboutBackground.jpg")
+    background: rgb(192, 191, 191);
 }
 
-.AboutInner:nth-child(1) {
-    padding-top: 1%;
-}
-
-.AboutInner h1 {
+.aboutMain header {
+    margin-left: 5%;
+    color: black;
+    font-family: 'Roboto', sans-serif;
     font-size: 2.5em;
-    color: blue;
+    border-left: 5px solid orangered;
+    padding-left: 1%;
+}
+
+.aboutMain p {
+    box-shadow: 1px 1px 40px black;
+    color: black;
     font-family: 'Roboto', sans-serif;
-    width: 25%;
-    padding: 1% 0% 1% 4%;
-    margin: 1% 1% 1% 1%;
-    border-top: 3px solid rgba(85, 85, 85, 0.377);
-    border-left: 3px solid rgba(85, 85, 85, 0.377);
+    font-size: 2em;
+    padding: 1% 1% 1% 1%;
+    margin: 2.5% 5% 0% 5%;
+    text-shadow: 1px 1px grey;
+    background: grey;
 }
 
-.aboutInfo {
-    border-left: 3px solid rgba(85, 85, 85, 0.377);
-    border-bottom: 3px solid rgba(85, 85, 85, 0.377);
-    padding: 1% 0% 1% 4%;
-    margin: 0% 1% 1% 1%;
+.aboutMain p span {
+    font-weight: bold;
 }
 
-.aboutInfo h6, .aboutInfo p, .aboutInfo h5 {
-    color: white;
-    font-size: 1.5em;
+.aboutUsCategories {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutUsCategories p {
+    background: linear-gradient(rgb(192, 191, 191), white);
+    height: 25vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 2% 2% 2%;
+    color: black;
     font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
 }
 
-.aboutInfo h6 {
-    text-decoration: underline;
-    text-decoration-color: rgba(85, 85, 85, 0.377);
-}
-
-.aboutInfo p:nth-child(2) {
-    margin-top: 1%;
-}
-
-.aboutInfo ul {
+.aboutPictures {
+    height: 45vh;
     margin-top: 2%;
-    width: 20%;
-    border: 1px solid rgba(85, 85, 85, 0.377);
-    padding: 2% 2% 2% 2%;
-    background: rgba(85, 85, 85, 0.377);
+    display: flex;
+    justify-content: center;
 }
 
-.aboutInfo li {
-    margin: 1% 1% 1% 1%;
-    color: white;
-    font-size: 1.5em;
-    font-family: 'Roboto', sans-serif;
+.aboutPictures section:nth-child(1) {
+    width: 25%;
+    background: url("./../assets/Me.JPG");
+    background-size: cover;
+    border-radius: 45%;
+    box-shadow: 1px 1px 10px black;
 }

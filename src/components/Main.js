@@ -4,7 +4,6 @@ import Landing from "./Landing";
 import About from "./About";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
-import {Link}from "react-scroll";
 
 class App extends React.Component {
   constructor(){
@@ -34,21 +33,7 @@ class App extends React.Component {
   render(){
     return (
     <div className={this.state.background} id="Main">
-      <div className="navBar">
-        <Link to="Main" smooth={true} duration={1000}>
-          <h2>Larias Games</h2>
-        </Link>
-        <Link to='About' smooth={true} duration={1000}>
-          <h6>About</h6>
-        </Link>
-        <Link to="Portfolio" smooth={true} duration={1000}>
-          <h6>Portfolio</h6>
-        </Link>
-        <Link to="Contact" smooth={true} duration={1000}>
-          <h6>Contact</h6>
-        </Link>
-        <h6>Admin</h6>
-      </div>
+      
       <Landing/>
       <About />
       <Portfolio />
