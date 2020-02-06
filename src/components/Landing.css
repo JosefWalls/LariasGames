@@ -3,6 +3,8 @@
     margin-bottom: 100vh;
     background: grey;
     padding-top: 7.5%;
+    display: flex;
+    justify-content: center;
 }
 
 #latestPack {
@@ -22,40 +24,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.landingScenario img {
+#imageOne {
     height: 500px;
-    width: 500px;
-    border-radius: 5%;
-    box-shadow: 1px 1px 10px black;
-}
-
-.landingScenario img:hover {
-    opacity: 0.75;
-}
-
-.landingScenario {
-    margin-top: 1%;
-    animation-name: scenarioAnimation;
-    animation-delay: 0.5s;
-    animation-duration: 0.75s;
-    animation-fill-mode: forwards;
-}
-
-.landingScenarioInnerText {
     width: 50%;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0px 10px 0px;
-    border: 1px solid rgba(85, 85, 85, 0.377);
+    border-radius: 5%;
+    background: url("./../assets/landing/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.877);
 }
 
-@keyframes scenarioAnimation {
-    0% {
-        position: relative;
-        left: 0%;
-    }
-    100% {
-        position: relative;
-        left: 25%;
-    }
-}

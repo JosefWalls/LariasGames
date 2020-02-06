@@ -14,26 +14,9 @@ class Landing extends React.Component {
     }
 
     render() {
-        const mappedLatestScenario = this.props.scenarios.map((val, i) => {
-            while(i >= this.props.scenarios.length - 1){
-                return (
-                    <div className="landingScenario" >
-                    <Link to={`/Scenario/${val._id}`}>
-                            <img src={val.Header}></img>
-                    </Link>
-                        <div className="landingScenarioInnerText">
-                            <h1>{val.Title}</h1>
-                        </div>
-                    </div>
-                )
-            }
-        })
         return (
             <div className="landingCard">
-                <header>
-                    <h1 id="latestPack">Our Latest Pack!</h1>
-                </header>
-                {mappedLatestScenario}
+                <img id="imageOne"></img>
             </div>
         )
     }

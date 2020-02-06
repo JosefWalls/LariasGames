@@ -112,9 +112,10 @@ table {
 }
 
 .backgroundOne {
-  background-image: url("./assets//pacificHeader.jpg");
+  background-image: url("./assets//springHeader.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .backgroundTwo {

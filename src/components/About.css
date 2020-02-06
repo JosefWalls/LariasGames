@@ -1,7 +1,8 @@
 .aboutCard {
   height: 150vh;
   margin-bottom: 100vh;
-  background: #000030;
+  padding-top: 2%;
+  background: grey;
 }
 
 .AboutInner:nth-child(1) {

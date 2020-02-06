@@ -38,41 +38,57 @@ class Scenario extends React.Component {
         const mappedInfo = this.props.product.map((val, i) => {
             return (
                 <div className="scenarioProductCard">
-                    <header>
+                    <header id="mainTitle">
                         <h1>{val.Title}</h1>
                     </header>
                         <section className="mappedScenarioImages">
-                        <img src={this.props.product[0].Images[this.state.imageIndex]}></img>
-                        </section>
+                        <img src={this.props.product[0].Images[this.state.imageIndex]} className="mainPhoto"></img>
                         <main>
+                        {
+                                val.Images.map((val, i) => {
+                                    return (
+                                        <div>
+                                            {i === this.state.imageIndex ? <img src={val} id="currentImage"></img>
+                                            :
+                                            <img src={val}></img>
+                                            }
+                                        </div>
+                                    )
+                                })
+                        }
+                        </main>
+                        </section>
+                        <main className="imageSelection">
                             <button onClick={this.viewPreviousImage}>Prev</button>
                             <button onClick={this.viewNextImage}>Next</button>
                         </main>
-                    <h6 id="publisher">Published By: {val.Publisher}</h6>
-                    <p id="price">${val.Price}</p>
-                    <p id="productId">Product ID: {val._id}</p>
+                        <section className="productDetails">
+                            <p id="productId">Product ID: {val._id}</p>
+                            <p id="publisher">Published By {val.Publisher}</p>
+                            <h6 id="price">${val.Price}</h6>
+                        </section>
                     <section>
-                        <article>
+                        <article className="productDescription">
                             <header>
-                                <h3>Description:</h3>
+                                <h3>Description</h3>
                             </header>
                             <p>{val.Description}</p>
                         </article>
-                        <article>
+                        <article className="productFeatures">
                             <header>
-                                <h3>Included Scenarios</h3>
+                                <h3>Included in this Scenario Pack:</h3>
                             </header>
-                            <section id="mappedFeaturesCard">
+                            <ul className="mappedFeaturesCard">
                             {
                             val.Features.map((val, i) => {
                                 return (
                                     <div className="mappedFeatures">
-                                        <p>{val}</p>
+                                        <li>{val}</li>
                                     </div>
                                 )
                             })
                             }
-                            </section>
+                            </ul>
                         </article>
                     </section>
                     <footer>

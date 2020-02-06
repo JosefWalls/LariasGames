@@ -10,8 +10,11 @@ class Contact extends React.Component {
 
     render() {
         return (
-            <div className="contactCard">
-                <h1>Contact</h1>
+            <div className="contactCard" id="Contact">
+                <input placeholder="Email"></input>
+                <input placeholder="Subject"></input>
+                <input placeholder="Message"></input>
+                <button>Submit Message</button>
             </div>
         )
     }

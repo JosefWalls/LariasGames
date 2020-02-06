@@ -11,104 +11,160 @@
     padding-bottom: 5%;
     padding-top: 2.5%;
     background: rgb(155, 155, 155);
+    border-radius: 5%;
 }
 
-.scenarioProductCard header {
-    color: white;
-    font-family: 'Roboto', sans-serif;
+#mainTitle{
     display: flex;
     justify-content: center;
-    font-weight: bolder;
-    font-size: 1.5em;
-    margin-top: 1%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px black;
+    padding: 2% 0% 2% 0%;
+    border: 3px solid rgba(85, 85, 85, 0.5);
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    box-shadow: 3px 3px 10px rgba(85, 85, 85, 0.5);
     margin-bottom: 2.5%;
 }
 
-#publisher, #price, #productId {
-    margin: 1% 0% 1% 2%;
+.mainPhoto {
+    width: 35vw;
+    height: 40vh;
+    box-shadow: 1px 1px 10px rgba(85, 85, 85, 0.5);
+}
+
+.mappedScenarioImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mappedScenarioImages main {
+    border: 1px solid rgba(85, 85, 85, 0.5);
+    box-shadow: 1px 1px 10px rgba(85, 85, 85, 0.5);
+    padding: 1% 1% 1% 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mappedScenarioImages main img {
+    border: 1px solid rgba(85, 85, 85, 0.5);
+    box-shadow: 1px 1px 10px rgba(85, 85, 85, 0.5);
+    height: 15vh;
+    width: 15vw;
+}
+
+
+#currentImage {
+    opacity: 0.5;
+}
+
+.imageSelection {
+    display: flex;
+    justify-content: center;
+    margin-top: -15vh;
+}
+
+.imageSelection button {
+    padding: 0.5% 2.5% 0.5% 2.5%;
+    margin: 0% 0.5% 0% 0.5%;
+    border: none;
+}
+
+.imageSelection button:hover, .scenarioCard footer button:hover {
+    background: transparent;
+    border: 4px solid orangered;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.productDetails {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+}
+
+#productId, #publisher {
+    border: 1px solid rgba(85, 85, 85, 0.5);
+    color: rgb(66, 66, 66);
+    width: 75%;
+    margin-top: 2vh;
+    margin-left: 10vh;
+    padding: 1% 0% 1% 0%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 10px rgba(85, 85, 85, 0.5);
+    font-weight: bold;
+    align-items: center;
 }
 
 #price {
-    border: 2px solid black;
-    background: white;
-    color: black;
-    width: 5%;
-    padding: 1% 0% 1% 0%;
-    display: flex;
-    justify-content: center;
-}
-
-#productId {
-    font-size: 0.75em;
-}
-
-.scenarioProductCard section {
-    display: flex;
-    justify-content: center;
-}
-
-.scenarioProductCard section article {
-    border: 1px solid rgba(85, 85, 85, 0.377);
-    width: 50%;
-    margin: 0% 2.5% 0% 2.5%;
-    padding: 2% 2% 2% 2%;
-    font-family: 'Roboto', sans-serif;
-}
-
-.scenarioProductCard section h3 {
-    padding-bottom: 2%;
-    color: white;
-    font-weight: normal;
-}
-
-#mappedFeaturesCard {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.mappedFeatures {
-    margin: 1% 0% 1% 25%;
-}
-
-.scenarioProductCard footer {
-    display: flex;
-    justify-content: center;
-    height: 5%;
-}
-
-.scenarioProductCard footer button {
     border: none;
-    background: orangered;
-    height: 100%;
-    padding: 5% 5% 5% 5%;
     color: white;
-}
-
-.scenarioProductCard footer button:hover {
-    color: black;
-    background: white;
-    opacity: 0.25;
-}
-
-.mappedScenarioImages{
-    border: 1px solid rgba(85, 85, 85, 0.377);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    box-shadow: 1px 1px 10px rgba(85, 85, 85, 0.75);
-}
-
-.mappedScenarioImages img {
-    width: 50vw;
-    height: 50vh;
-}
-
-.scenarioProductCard main {
-    border: 1px solid rgba(85, 85, 85, 0.377);
+    width: 75%;
+    background: orangered;
+    margin-top: 2vh;
+    margin-left: 10vh;
+    padding: 1% 0% 1% 0%;
     display: flex;
     justify-content: center;
-    padding: 1% 0% 1% 0%;
-    margin: 0% 20% 0% 20%;
-    box-shadow: 1px 1px 10px rgba(85, 85, 85, 0.75);
+    box-shadow: 1px 1px 10px rgba(85, 85, 85, 0.5);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.productDescription {
+    margin-top: -10vh;
+    margin-bottom: 5vh;
+    border: 1px solid rgba(85, 85, 85, 0.5);
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 1px 1px 10px rgba(85, 85, 85, 0.5);
+}
+
+.productDescription header, .productFeatures h3 {
+    display: flex;
+    justify-content: center;
+    padding: 1% 1% 1% 1%;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(82, 80, 80);
+    text-decoration: underline;
+    text-decoration-color: rgba(85, 85, 85, 0.5);
+}
+
+.productDescription p {
+    padding: 0% 5% 2.5% 5%;
+    color: rgba(85, 85, 85, 1.0);
+    font-size: 1.5em;
+    text-shadow: 1px 1px black;
+}
+
+.productFeatures {
+    border: 1px solid rgba(85, 85, 85, 0.5);
+    box-shadow: 1px 1px 10px rgba(85, 85, 85, 0.5);
+}
+
+
+.mappedFeaturesCard li {
+    border: 1px solid rgba(85, 85, 85, 0.5);
+    box-shadow: 1px 1px 10px rgba(85, 85, 85, 0.5);
+    margin: 2% 2% 2% 2%;
+    font-size: 1.5em;
+    color: black;
+    padding: 1% 1% 1% 1%
+}
+
+.scenarioCard footer {
+    margin-top: -5%;
+    display: flex;
+    justify-content: center;
+}
+
+.scenarioCard footer button {
+    height: 7.5vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    box-shadow: 1px 1px 10px rgba(85, 85, 85, 0.5);
 }
