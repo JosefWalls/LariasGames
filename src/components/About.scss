@@ -63,3 +63,18 @@
     border-radius: 45%;
     box-shadow: 1px 1px 10px black;
 }
+
+#whatWeOffer {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+
+#whatWeOffer h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    background: linear-gradient(white, rgb(192, 191, 191));
+    padding: 2% 2% 2% 2%;
+    font-weight: bold;
+}

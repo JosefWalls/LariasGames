@@ -80,4 +80,23 @@
   -webkit-box-shadow: 1px 1px 10px black;
           box-shadow: 1px 1px 10px black;
 }
+
+#whatWeOffer {
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#whatWeOffer h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#c0bfbf));
+  background: linear-gradient(white, #c0bfbf);
+  padding: 2% 2% 2% 2%;
+  font-weight: bold;
+}
 /*# sourceMappingURL=About.css.map */

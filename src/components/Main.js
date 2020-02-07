@@ -17,7 +17,7 @@ class App extends React.Component {
 
   componentDidMount = () => {
     window.addEventListener('scroll', () => {
-      if(window.scrollY < 1500){
+      if(window.scrollY < 1900){
         this.setState({background: "backgroundOne"})
       }
       if(window.scrollY >= 2000){

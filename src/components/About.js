@@ -26,6 +26,9 @@ class About extends React.Component {
                 <div className="aboutPictures">
                     <section></section>
                 </div>
+                <header id="whatWeOffer">
+                    <h3>What We Offer</h3>
+                </header>
                 <div className="aboutUsCategories">
                         <p>Scenarios / Activites</p>
                         <p>Asset Creation</p>
