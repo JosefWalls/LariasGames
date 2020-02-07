@@ -50,6 +50,7 @@ table {
 .App {
   text-align: center;
   background: blue;
+  zoom: 80%;
 }
 
 .App-logo {
