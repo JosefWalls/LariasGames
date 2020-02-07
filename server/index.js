@@ -24,7 +24,7 @@ app.use(session({
     resave: false
 }))
 
-app.use(express.static(`${dirname}/../build`));
+app.use(express.static(`${__dirname}/../build`));
 
 const ScenarioRouter = require("./routes/Scenarios");
 const DeveloperRouter = require("./routes/Developer");
