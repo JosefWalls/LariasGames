@@ -24,13 +24,7 @@ app.use(session({
     resave: false
 }))
 
-
-
-const path = require('path'); // Usually moved to the start of file
-
-app.get('*', (req, res)=>{
-    res.sendFile(path.join(__dirname, '../build/index.html'));
-});
+app.use(express.static(`${dirname}/../build`));
 
 const ScenarioRouter = require("./routes/Scenarios");
 const DeveloperRouter = require("./routes/Developer");
