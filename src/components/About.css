@@ -1,88 +1,27 @@
 .aboutCard {
-  height: 150vh;
-  margin-bottom: 100vh;
   padding-top: 2%;
-  background: #c0bfbf;
-}
-
-.aboutMain header {
-  margin-left: 5%;
-  color: black;
+  background: #e9ecef;
   font-family: 'Roboto', sans-serif;
-  font-size: 2.5em;
-  border-left: 5px solid orangered;
-  padding-left: 1%;
+  padding-bottom: 10vh;
 }
 
-.aboutMain p {
-  -webkit-box-shadow: 1px 1px 40px black;
-          box-shadow: 1px 1px 40px black;
-  color: black;
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  padding: 1% 1% 1% 1%;
-  margin: 2.5% 5% 0% 5%;
-  text-shadow: 1px 1px grey;
-  background: grey;
-}
-
-.aboutMain p span {
-  font-weight: bold;
-}
-
-.aboutUsCategories {
-  margin-top: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.aboutUsCategories p {
-  background: -webkit-gradient(linear, left top, left bottom, from(#c0bfbf), to(white));
-  background: linear-gradient(#c0bfbf, white);
-  height: 25vh;
-  width: 20vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 2% 2% 2% 2%;
-  color: black;
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  font-weight: bold;
-}
-
-.aboutPictures {
-  height: 45vh;
-  margin-top: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.aboutPictures section:nth-child(1) {
-  width: 25%;
-  background: url("./../assets/Me.JPG");
-  background-size: cover;
-  border-radius: 45%;
-  -webkit-box-shadow: 1px 1px 10px black;
-          box-shadow: 1px 1px 10px black;
+.aboutMain {
+  margin-top: 10vh;
+  font-size: 1.5em;
 }
 
 #whatWeOffer {
-  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -10vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.aboutCard footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,12 +30,39 @@
           justify-content: center;
 }
 
-#whatWeOffer h3 {
+.teamCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#c0bfbf));
-  background: linear-gradient(white, #c0bfbf);
-  padding: 2% 2% 2% 2%;
-  font-weight: bold;
+}
+
+.teamCard main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.teamCard div {
+  width: 25vw;
+  margin-right: 10px;
+}
+
+#JosefWallsImage {
+  height: 40vh;
+  background: url("./../assets/Josef.png");
+  background-size: cover;
+  border-radius: 5%;
+}
+
+.teamCard h6 {
+  font-style: italic;
+  text-decoration: underline;
+  -webkit-text-decoration-color: grey;
+          text-decoration-color: grey;
 }
 /*# sourceMappingURL=About.css.map */

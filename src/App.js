@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import {HashRouter} from "react-router-dom";
 import routes from "./Routes";
+import Nav from "./components/Navbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
   constructor(){
@@ -12,6 +14,7 @@ class App extends React.Component {
     return (
       <HashRouter>
     <div>
+      <Nav/>
       {routes}
     </div>
     </HashRouter>

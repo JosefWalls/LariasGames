@@ -1,0 +1,39 @@
+.NavBar {
+    height: 10vh;
+    position: fixed;
+    color: white;
+    background: linear-gradient(grey, #e9ecef);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.012);
+}
+
+#LariasGames {
+    color: Red;
+    text-shadow: 1px 1px white;
+    margin-left: 10vw;
+    font-family: 'Bangers', cursive;
+}
+
+.sectionsOnNav {
+    position: fixed;
+    color: black;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    margin-right: 5vw;
+}
+
+.sectionsOnNav section {
+    margin: 0vh 2vw 0vh 2vw;
+    font-family: 'Bangers', cursive;
+    border-bottom: 4px solid grey;
+    transition-duration: 0.5s;
+}
+
+.sectionsOnNav section:hover {
+    cursor: pointer;
+    border-bottom: 4px solid red;
+    transition-duration: 0.5s;
+}

@@ -4,15 +4,13 @@
 }
 
 .productPage {
-  background: url("./../assets/ScenarioBackground.jpg");
+  background: #e9ecef;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .productCard {
   background: white;
-  -webkit-box-shadow: 1px 1px 40px black;
-          box-shadow: 1px 1px 40px black;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -24,13 +22,13 @@
   border: 1px solid grey;
   width: 75%;
   margin: 10px 12.5% 10px 12.5%;
-  -webkit-box-shadow: 1px 12.5px 20px grey;
-          box-shadow: 1px 12.5px 20px grey;
+  padding: 1% 1% 1% 1%;
 }
 
 .individualProduct img {
   height: 250px;
   width: 100%;
+  position: relative;
 }
 
 .individualProduct header {
@@ -46,23 +44,7 @@
   margin: 1% 1% 1% 1%;
 }
 
-.individualProduct section button {
-  margin-left: 10%;
-  border: none;
-  border-radius: 7.5%;
-  background: orangered;
-  height: 100%;
-  width: 150px;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
-}
-
-.individualProduct section button:hover {
-  background: white;
-  border: 1px solid orangered;
-}
-
-.individualProduct img:hover {
+.individualProduct hover {
   opacity: 0.5;
 }
 

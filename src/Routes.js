@@ -7,6 +7,7 @@ import DeveloperHome from "./components/Developer/Home";
 import SiteManagement from "./components/Developer/SiteManagement/Products";
 import Scenarios from "./components/Scenarios";
 import Scenario from "./components/Scenario";
+import AboutUs from "./components/About";
 
 export default (
     <Switch>
@@ -16,5 +17,6 @@ export default (
         <Route path="/SiteManagement/Products" component={SiteManagement} />
         <Route path="/Scenarios" component={Scenarios} />
         <Route path="/Scenario/:scenario_id" component={Scenario} />
+        <Route path="/About" component={AboutUs} />
     </Switch>
 )

@@ -1,45 +1,21 @@
 .landingCard {
     height: 100vh;
-    margin-bottom: 100vh;
-    background: grey;
-    padding-top: 7.5%;
+    background: #e9ecef;
     display: flex;
     justify-content: center;
 }
 
-#latestPack {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.5em;
-}
-
-.landingImage {
-    box-shadow: 1px 1px 50px black;
-    height: 70vh;
-    width: 60vw;
-    background: url("./../assets/landing/landing.png");
-    opacity: 0.9;
-    background-repeat: no-repeat;
-    margin-top: -5vh;
-}
-
-.landingTraits {
-    margin-top: 1vh;
-    display: grid;
+.landingCard  {
+    display: flex;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    right: 15px;
+    margin-top: 10vh;
+    padding-top: 5vh;
 }
 
-.landingTraits p {
-    background: linear-gradient(white, grey);
-    height: 25vh;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin: 2% 2% 2% 2%;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    text-decoration: underline; 
-    box-shadow: 1px 1px 10px black;
+.carouselCard {
+    width: 65vw;
 }

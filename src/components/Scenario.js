@@ -38,64 +38,9 @@ class Scenario extends React.Component {
         const mappedInfo = this.props.product.map((val, i) => {
             return (
                 <div className="scenarioProductCard">
-                    <header id="mainTitle">
-                        <h1>{val.Title}</h1>
+                    <header>
+                        <img src={val.Header}></img>
                     </header>
-                        <section className="mappedScenarioImages">
-                        <img src={this.props.product[0].Images[this.state.imageIndex]} className="mainPhoto"></img>
-                        <main>
-                        {
-                                val.Images.map((val, i) => {
-                                    return (
-                                        <div>
-                                            {i === this.state.imageIndex ? <img src={val} id="currentImage"></img>
-                                            :
-                                            <img src={val}></img>
-                                            }
-                                        </div>
-                                    )
-                                })
-                        }
-                        </main>
-                        </section>
-                        <main className="imageSelection">
-                            <button onClick={this.viewPreviousImage}>Prev</button>
-                            <button onClick={this.viewNextImage}>Next</button>
-                        </main>
-                        <section className="productDetails">
-                            <p id="productId">Product ID: {val._id}</p>
-                            <p id="publisher">Published By {val.Publisher}</p>
-                            <h6 id="price">${val.Price}</h6>
-                        </section>
-                    <section>
-                        <article className="productDescription">
-                            <header>
-                                <h3>Description</h3>
-                            </header>
-                            <p>{val.Description}</p>
-                        </article>
-                        <article className="productFeatures">
-                            <header>
-                                <h3>Included in this Scenario Pack:</h3>
-                            </header>
-                            <ul className="mappedFeaturesCard">
-                            {
-                            val.Features.map((val, i) => {
-                                return (
-                                    <div className="mappedFeatures">
-                                        <li>{val}</li>
-                                    </div>
-                                )
-                            })
-                            }
-                            </ul>
-                        </article>
-                    </section>
-                    <footer>
-                        <a href={val.Link} target="_blank">
-                            <button>Purchase Scenario Pack</button>
-                        </a>
-                    </footer>
                 </div>
             )
         })

@@ -33,11 +33,7 @@ class App extends React.Component {
   render(){
     return (
     <div className={this.state.background} id="Main">
-      
       <Landing/>
-      <About />
-      <Portfolio />
-      <Contact />
     </div>
   );
   }

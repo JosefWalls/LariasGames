@@ -2,8 +2,7 @@ import React from "react";
 import "./Landing.css";
 import {connect} from "react-redux";
 import {getAllScenarios} from "./../redux/reducers/Product";
-import {Link}from "react-scroll";
-
+import {Carousel, Card} from "react-bootstrap";
 class Landing extends React.Component {
     constructor(){
         super()
@@ -16,30 +15,43 @@ class Landing extends React.Component {
 
     render() {
         return (
-            <div className="landingCard">
-                <div className="navBar">
-                    <Link to="Main" smooth={true} duration={1000}>
-                        <h2>Larias Games</h2>
-                    </Link>
-                    <Link to='About' smooth={true} duration={1000}>
-                        <h6>About</h6>
-                    </Link>
-                    <Link to="Portfolio" smooth={true} duration={1000}>
-                        <h6>Portfolio</h6>
-                    </Link>
-                    <Link to="Contact" smooth={true} duration={1000}>
-                        <h6>Contact</h6>
-                    </Link>
-                    <h6>Admin</h6>
-                </div>
-                <main>
-                    <div className="landingImage"></div>
-                    <div className="landingTraits">
-                        <p>Passion</p>
-                        <p>Creativity</p>
-                        <p>Highest Quality</p>
+                <div className="landingCard">
+                <section>
+                    <div className="carouselCard">
+                    <Carousel>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src="http://bit.ly/2UB6nOm"
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+                                <h3>Alaska Railroad Scenario Pack</h3>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src="http://bit.ly/2OCmwiO"
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+                                <h3>Miami West Palm Scenario Pack</h3>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src="http://bit.ly/39iz6LP"
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+                                <h3>Pacific Surfliner Scenario Pack</h3>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
                     </div>
-                </main>
+                </section>
             </div>
         )
     }

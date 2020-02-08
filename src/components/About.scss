@@ -1,80 +1,51 @@
 .aboutCard {
-    height: 150vh;
-    margin-bottom: 100vh;
     padding-top: 2%;
-    background: rgb(192, 191, 191);
-}
-
-.aboutMain header {
-    margin-left: 5%;
-    color: black;
+    background: #e9ecef;
     font-family: 'Roboto', sans-serif;
-    font-size: 2.5em;
-    border-left: 5px solid orangered;
-    padding-left: 1%;
+    padding-bottom: 10vh;
 }
 
-.aboutMain p {
-    box-shadow: 1px 1px 40px black;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    padding: 1% 1% 1% 1%;
-    margin: 2.5% 5% 0% 5%;
-    text-shadow: 1px 1px grey;
-    background: grey;
-}
-
-.aboutMain p span {
-    font-weight: bold;
-}
-
-.aboutUsCategories {
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-}
-
-.aboutUsCategories p {
-    background: linear-gradient(rgb(192, 191, 191), white);
-    height: 25vh;
-    width: 20vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2% 2% 2% 2%;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.aboutPictures {
-    height: 45vh;
-    margin-top: 2%;
-    display: flex;
-    justify-content: center;
-}
-
-.aboutPictures section:nth-child(1) {
-    width: 25%;
-    background: url("./../assets/Me.JPG");
-    background-size: cover;
-    border-radius: 45%;
-    box-shadow: 1px 1px 10px black;
+.aboutMain {
+    margin-top: 10vh;
+    font-size: 1.5em;
 }
 
 #whatWeOffer {
-    margin-top: 3%;
+    display: flex;
+    margin-top: -10vh;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+.aboutCard footer {
     display: flex;
     justify-content: center;
 }
 
-
-#whatWeOffer h3{
+.teamCard {
+    display: flex;
+    justify-content: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    background: linear-gradient(white, rgb(192, 191, 191));
-    padding: 2% 2% 2% 2%;
-    font-weight: bold;
+}
+
+.teamCard main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.teamCard div {
+    width: 25vw;
+    margin-right: 10px;
+}
+
+#JosefWallsImage {
+    height: 40vh;
+    background: url("./../assets/Josef.png");
+    background-size: cover;
+    border-radius: 5%;
+}
+
+.teamCard h6 {
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: grey;
 }

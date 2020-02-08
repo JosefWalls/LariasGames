@@ -3,6 +3,7 @@ import {connect} from "react-redux";
 import {getAllScenarios, updateState} from "./../redux/reducers/Product";
 import "./Scenarios.css";
 import {Link} from "react-router-dom";
+import {Card, Button} from "react-bootstrap";
 
 class Scenarios extends React.Component {
     constructor(){
@@ -19,24 +20,23 @@ class Scenarios extends React.Component {
         const mappedProducts = this.props.scenarios.map((val, i) => {
             return (
                 <div className="individualProduct">
-                    <header>
-                        <h1>{val.Title}</h1>
-                    </header>
-                    <img src={val.Header}></img>
-                    <section>
-                        <Link to={`/Scenario/${val._id}`}>
-                            <button>View Scenario Pack</button>
-                        </Link>
-                    </section>
+                    <Link to={`/Scenario/${val._id}`}>
+                    <Card>
+                        <Card.Img variant="top" src={val.Header}></Card.Img>
+                        <Card.Title>{val.Title}</Card.Title>
+                    </Card>
+                    </Link>
                 </div>
             )
         })
         return (
-            <div className="productPage">
-                <div className="scenarioPage">
-                <div className="productCard">
-                    {mappedProducts}
-                </div>
+            <div>
+                <div className="productPage">
+                    <div className="scenarioPage">
+                        <div className="productCard">
+                            {mappedProducts}
+                        </div>
+                    </div>
                 </div>
             </div>
         )
