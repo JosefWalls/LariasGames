@@ -25,6 +25,7 @@
     display: flex;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
 }
 
 .teamCard main {
@@ -35,6 +36,11 @@
 .teamCard div {
     width: 25vw;
     margin-right: 10px;
+}
+
+.teamCard h1 {
+    font-size: 1.5rem;
+    margin-top: 2%;
 }
 
 #JosefWallsImage {
@@ -48,4 +54,6 @@
     font-style: italic;
     text-decoration: underline;
     text-decoration-color: grey;
+    font-weight: bold;
+    margin-bottom: 4%;
 }

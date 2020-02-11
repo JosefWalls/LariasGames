@@ -12,7 +12,8 @@ const initialState = {
     Publisher: "",
     Price: 0,
     Link: "",
-    Country: ""
+    Country: "",
+    Announcements: []
 }
 
 
@@ -21,6 +22,7 @@ const ADD_PRODUCT = "ADD_PRODUCT";
 const DELETE_PRODUCT = "DELETE_PRODUCT";
 const EDIT_PRODUCT = "EDIT_PRODUCT";
 const ADD_ANNOUNCEMENT = "ADD_ANNOUNCEMENT";
+const GET_ANNOUNCEMENTS = "GET_ANNOUNCEMENTS";
 
 export const updateState = (e) => {
     return {
@@ -80,6 +82,13 @@ export const addAnnouncement = (Title, Header, Description, Link) => {
     }
 }
 
+export const getAllAnnouncements = () => {
+    return {
+        type: GET_ANNOUNCEMENTS,
+        payload: axios.get("/Announcements/")
+    }
+}
+
 export default function reducer (state = initialState, action){
     const {type, payload} = action;
     switch(type){
@@ -103,5 +112,9 @@ export default function reducer (state = initialState, action){
             return {...state, loading: true}
         case `${ADD_ANNOUNCEMENT}_FULFILLED`:
             return {...state, loading: false}
+        case `${GET_ANNOUNCEMENTS}_PENDING`:
+            return {...state, loading: true}
+        case `${GET_ANNOUNCEMENTS}_FULFILLED`:
+            return {...state, loading: false, Announcements: payload.data}
     }
 }

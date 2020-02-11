@@ -11,8 +11,8 @@
 
 #LariasGames {
     color: Red;
-    text-shadow: 1px 1px white;
     margin-left: 10vw;
+    font-size: 2.5rem;
     font-family: 'Bangers', cursive;
 }
 
@@ -28,8 +28,8 @@
 .sectionsOnNav section {
     margin: 0vh 2vw 0vh 2vw;
     font-family: 'Bangers', cursive;
-    border-bottom: 4px solid grey;
     transition-duration: 0.5s;
+    font-size: 1.5rem;
 }
 
 .sectionsOnNav section:hover {

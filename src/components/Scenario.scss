@@ -5,6 +5,7 @@
     padding-bottom: 5%;
     justify-content: center;
     background: #e9ecef;
+    font-family: 'Roboto', sans-serif;
 }
 
 .smallerImages {
@@ -62,6 +63,9 @@
 .ProdutDescription header {
     text-decoration: underline;
     text-decoration-color: grey;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2%;
 }
 
 .ProdutDescription main {
@@ -77,6 +81,7 @@
 #publisher {
     display: flex;
     justify-content: center;
+    margin-bottom: 2%;
 }
 
 #publisher p {
@@ -104,6 +109,7 @@
     margin-top: 5%;
     display: flex;
     justify-content: center;
+    font-size: 2rem;
 }
 
 .ProductFooter h2 {

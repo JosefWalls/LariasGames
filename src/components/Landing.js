@@ -3,6 +3,8 @@ import "./Landing.css";
 import {connect} from "react-redux";
 import {getAllScenarios} from "./../redux/reducers/Product";
 import {Carousel, Card} from "react-bootstrap";
+import Announcement from "./Announcement";
+
 class Landing extends React.Component {
     constructor(){
         super()
@@ -52,7 +54,7 @@ class Landing extends React.Component {
                     </Carousel>
                     </div>
                 </section>
-            </div>
+                </div> 
         )
     }
 }

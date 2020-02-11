@@ -38,6 +38,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
 }
 
 .teamCard main {
@@ -52,6 +53,11 @@
   margin-right: 10px;
 }
 
+.teamCard h1 {
+  font-size: 1.5rem;
+  margin-top: 2%;
+}
+
 #JosefWallsImage {
   height: 40vh;
   background: url("./../assets/Josef.png");
@@ -64,5 +70,7 @@
   text-decoration: underline;
   -webkit-text-decoration-color: grey;
           text-decoration-color: grey;
+  font-weight: bold;
+  margin-bottom: 4%;
 }
 /*# sourceMappingURL=About.css.map */

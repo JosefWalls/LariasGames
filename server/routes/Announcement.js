@@ -19,5 +19,11 @@ Router.route("/AddAnnouncement").post((req, res) => {
     })
 })
 
+Router.route("/").get((req, res) => {
+    Announcement.find({})
+    .then(Announcements => res.status(200).json(Announcements))
+    .catch(err => res.status(403).json(err))
+})
+
 
 module.exports = Router;
