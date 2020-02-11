@@ -1,7 +1,7 @@
 .NavBar {
     height: 10vh;
     position: fixed;
-    color: white;
+    color: red;
     background: linear-gradient(grey, #e9ecef);
     width: 100%;
     display: flex;
