@@ -9,6 +9,8 @@ import Scenarios from "./components/Scenarios";
 import Scenario from "./components/Scenario";
 import AboutUs from "./components/About";
 import EditProduct from "./components/Developer/SiteManagement/EditProduct";
+import ForumLanding from "./components/Forum/Landing";
+import Forum from "./components/Forum/Forum";
 
 export default (
     <Switch>
@@ -20,5 +22,7 @@ export default (
         <Route path="/Scenarios" component={Scenarios} />
         <Route path="/Scenario/:scenario_id" component={Scenario} />
         <Route path="/About" component={AboutUs} />
+        <Route exact path="/Forum/:forum_id" component={Forum} />
+        <Route path="/Forum" component={ForumLanding} />
     </Switch>
 )

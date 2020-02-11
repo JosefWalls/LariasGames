@@ -3,6 +3,7 @@
     background: #e9ecef;
     display: flex;
     justify-content: center;
+    border-bottom: 5px solid gray;
 }
 
 .landingCard  {

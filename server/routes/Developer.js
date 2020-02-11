@@ -66,13 +66,13 @@ router.route("/Signin").post((req, res) => {
         if(!bcrypt.compare(Password, developer.Password)){
             res.status(403).json("Invalid Login")
         }
-        
-        req.session.developer = {
-            Username: developer.Username,
-            Position: developer.Position
+
+        req.session.user = {
+            loggedIn: true
         }
 
-        res.status(200).json(req.session.developer)
+        console.log(req.session)
+        res.status(200).json(req.session)
     })
 })
 

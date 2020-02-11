@@ -4,6 +4,7 @@ import {connect} from "react-redux";
 import {getAllScenarios} from "./../redux/reducers/Product";
 import {Carousel, Card} from "react-bootstrap";
 import Announcement from "./Announcement";
+import ForumLanding from "./Forum/Landing";
 
 class Landing extends React.Component {
     constructor(){
@@ -17,7 +18,8 @@ class Landing extends React.Component {
 
     render() {
         return (
-                <div className="landingCard">
+                <div>
+                    <div className="landingCard">
                 <section>
                     <div className="carouselCard">
                     <Carousel>
@@ -55,6 +57,9 @@ class Landing extends React.Component {
                     </div>
                 </section>
                 </div> 
+                <Announcement />
+                <ForumLanding />
+                </div>
         )
     }
 }

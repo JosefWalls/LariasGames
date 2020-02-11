@@ -4,11 +4,13 @@ import promise from "redux-promise-middleware";
 import ProductReducer from "./reducers/Product";
 import DeveloperReducer from "./reducers/Developer";
 import SiteManagementReducer from "./reducers/SiteManagement";
+import ForumReducer from "./reducers/Forum";
 
 const root = combineReducers ({
     ProductReducer,
     DeveloperReducer,
-    SiteManagementReducer
+    SiteManagementReducer,
+    ForumReducer
 })
 
 

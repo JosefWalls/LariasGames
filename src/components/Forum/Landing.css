@@ -1,0 +1,36 @@
+.ForumLandingMain {
+    background: #e9ecef;
+    border-top: 5px solid gray;
+    display: flex;
+    justify-content: center;
+    padding-top: 11vh;
+    padding-bottom: 10vh;
+}
+
+.ForumLandingCard {
+    border: 1px solid black;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 10vh;
+    padding: 2% 2% 2% 2%;
+}
+
+.ForumThreadCard {
+    border: 1px solid grey;
+    background: white;
+    height: 20vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ForumThreadCard header {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2.5vw;
+    margin-top: 2.5vh;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: underline lightseagreen;
+}

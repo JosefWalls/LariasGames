@@ -29,6 +29,7 @@ Router.route("/Add").post((req, res) => {
 
 Router.route("/").get((req, res) => {
     console.log("All scenarios")
+    console.log(req.session)
     Scenario.find({Category: "Scenario"})
     .then(scenarios => res.json(scenarios))
     .catch(err => res.json(err))

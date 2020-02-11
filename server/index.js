@@ -1,13 +1,13 @@
 
 require("dotenv").config();
-const session = require("express-session");
+const sessions = require("express-session");
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const app = express();
 const massive = require("massive");
 
-app.use(express.json());
+
 app.use(cors());
 
 const uri = process.env.AUTH_URI;
@@ -18,23 +18,29 @@ connection.once("open", () => {
     console.log("Database Connected")
 })
 
-app.use(session({
-    secret: "LariasGames",
+
+app.use(express.static(`${__dirname}/../build`));
+
+app.use(sessions({
+    secret: "Autoclone",
     saveUninitialized: true,
     resave: false
 }))
 
-app.use(express.static(`${__dirname}/../build`));
+app.use(express.json());
+
 
 const ScenarioRouter = require("./routes/Scenarios");
 const DeveloperRouter = require("./routes/Developer");
 const RouteRouter = require("./routes/Route");
 const AnnouncementRouter = require("./routes/Announcement");
+const ForumRouter = require("./routes/Forum");
 
 app.use("/Scenarios", ScenarioRouter);
 app.use("/Developer", DeveloperRouter);
 app.use("/Routes", RouteRouter);
 app.use("/Announcements", AnnouncementRouter);
+app.use("/Forum", ForumRouter);
 
 
 app.listen(4040, () => console.log("Port 4040"))

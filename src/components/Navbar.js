@@ -28,6 +28,11 @@ class NavBar extends React.Component {
                         <h3>Our Projects</h3>
                     </section>
                 </Link>
+                <Link to="/Forum">
+                    <section>
+                        <h3>Forums</h3>
+                    </section>
+                </Link>
                 <Link to="/Developer/Login">
                     <section>
                         <h3>Admin</h3>

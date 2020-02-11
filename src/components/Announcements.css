@@ -1,3 +1,76 @@
+.AnnouncementMain {
+    height: 200vh;
+    padding-top: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .AnnouncementCard {
-    border: 1px solid red;
+    background: rgba(46, 46, 46, 0.76);
+    height: 75%;
+    width: 75%;
+}
+
+.Announcement {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Announcement img {
+    width: 20vw;
+    height: 450px;
+    margin-top: 2.5%;;
+    margin-right: 1.5%
+}
+
+.Announcement section {
+    color: red;
+    border: 1px solid rgb(46, 46, 46);
+    width: 50vw;
+    height: 50vh;
+}
+
+.Announcement section header {
+    font-size: 2rem;
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.Announcement div {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Announcement div p {
+    width: 75%;
+    font-size: 1.5rem;
+}
+
+.Announcement footer {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.Announcement footer button {
+    height: 5vh;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    font-weight: bold;
+}
+
+.Announcement footer button:hover {
+    background: red;
+    color: white;
+    font-weight: normal;
 }
