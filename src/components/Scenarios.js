@@ -3,7 +3,7 @@ import {connect} from "react-redux";
 import {getAllScenarios, updateState} from "./../redux/reducers/Product";
 import "./Scenarios.css";
 import {Link} from "react-router-dom";
-import {Card, Button} from "react-bootstrap";
+import {Card} from "react-bootstrap";
 
 class Scenarios extends React.Component {
     constructor(){
