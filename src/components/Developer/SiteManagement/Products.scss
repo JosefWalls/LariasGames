@@ -1,12 +1,13 @@
-.productMain {
-    background: linear-gradient(to right , navy, red, navy);
+.ProductsHome {
+    padding-top: 10vh;
+    background: #e9ecef;
 }
 
-.productMain section {
+.ProductsHome section {
     padding: 10px 5px 0px 5px;
     display: grid;
     grid-template-columns: 1fr;
-    background: grey;
+    background: #e9ecef;
 }
 
 .addProduct {
@@ -21,7 +22,7 @@
     color: white;
 }
 
-.productMain section input, .productMain section select , .productMain section textarea, .productMain section button{
+.ProductsHome section input, .ProductsHome section select , .ProductsHome section textarea{
     width: 75%;
     margin-left: 12.5%;
     margin-top: 5px;
@@ -29,20 +30,26 @@
     padding: 5px 5px 5px 5px;
 }
 
-.productMain section select {
+.ProductsHome section select {
     width: 77.5%;
     margin-bottom: 5px;
 }
 
-.productMain section button {
-    width: 77.5%;
-    margin-bottom: 5px;
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    padding: 1% 0% 1% 0%;
 }
 
-.productMain section button:hover {
+.buttonContainer button {
+    border: 1px solid grey;
+    height: 5vh;
+}
+
+.buttonContainer button:hover {
+    border: 1px solid white;
+    background: red;
     color: white;
-    background: orangered;
-    text-shadow: 1px 1px black;
 }
 
 #descriptionBox {

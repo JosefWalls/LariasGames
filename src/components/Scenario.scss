@@ -1,16 +1,135 @@
-.scenarioCard {
-    background: url("./../assets/ScenarioBackground.jpg");
-    background-repeat: no-repeat;
-    background-size:  100% 100%;;
-}
-
-.scenarioCard section {
-    margin: 0% 5% 5% 5%;
+.ProductCard {
+    padding-top: 11vh;
+    padding-bottom: 10vh;
+    display: flex;
     padding-bottom: 5%;
-    padding-top: 2.5%;
-    background: rgb(155, 155, 155);
+    justify-content: center;
+    background: #e9ecef;
 }
 
-.scenarioProductCard header {
-    margin-left: 10vw;
+.smallerImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50vw;
+    margin-left: 1.5%;
+}
+
+.ProductImages {
+    border: 0.5px solid grey;
+    padding-bottom: 2%;
+    margin-left: 1%;
+}
+
+.ProductImages img {
+    height: 7.5vw;
+    width: 15vw;
+}
+
+.buttonImages{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.ProdutDescription {
+    width: 50vw;
+}
+
+#MainImage {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#MainImage img {
+    width: 90%;
+    height: 90%;
+}
+
+#CurrentImage {
+    opacity: 0.5;
+}
+
+.ProdutDescription header, .ProdutDescription main  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProdutDescription header {
+    text-decoration: underline;
+    text-decoration-color: grey;
+}
+
+.ProdutDescription main {
+    display: flex;
+    justify-content: center;
+}
+
+.ProdutDescription main p {
+    width: 75%;
+    font-size: 1.25rem;
+}
+
+#publisher {
+    display: flex;
+    justify-content: center;
+}
+
+#publisher p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ProductFeatures {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.FeatureCard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.FeatureCard p {
+    width: 25vw;
+    margin: 10px 0 10px 0;
+}
+
+.ProductFooter {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.ProductFooter h2 {
+    border: 1px solid grey;
+    background: white;
+    color: blue;
+    padding:  5% 12% 5% 12%;
+}
+
+.buttonToPurchase {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+    background: #e9ecef;
+}
+
+.buttonToPurchase button {
+    height: 5vh;
+    background: red;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.buttonToPurchase button:hover {
+    border: 1px solid red;
+    background: white;
+    color: black;
 }

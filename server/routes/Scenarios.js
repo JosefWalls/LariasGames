@@ -42,4 +42,20 @@ Router.route("/:scenario_id").get((req, res) => {
     .catch(err => res.status(403).json(err))
 })
 
+Router.route("/Delete/:scenario_id").delete((req, res) => {
+    const scenarioId = req.params.scenario_id;
+    Scenario.deleteOne({_id: scenarioId})
+    .then(res.status(200).json("Scenario Deleted"))
+    .catch(err => res.json(403).json(err))
+})
+
+Router.route("/Edit/:scenario_id").put((req, res) => {
+    console.log("hit")
+    const scenarioId = req.params.scenario_id;
+    const {Title, Description, Header, Images, Features, Publisher, Price, Link, Country} = req.body;
+    Scenario.updateOne({_id: scenarioId}, {$set: {Title: Title, Description: Description, Header: Header, Publisher: Publisher, Price: Price, Link: Link, Country: Country}})
+    .then(res.status(200).json("Scenario Pack Edited"))
+    .catch(err => res.status(403).json(err))
+})
+
 module.exports = Router;

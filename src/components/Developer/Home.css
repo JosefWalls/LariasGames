@@ -1,0 +1,18 @@
+.developerHome {
+    padding-top: 12vh;
+    background: #e9ecef;
+    display: flex;
+    justify-content: center;
+}
+
+#deleteProduct {
+    background: red;
+    border: none;
+    color: white;
+}
+
+#deleteProduct:hover {
+    background: white;
+    color: red;
+    border: 1px solid red;
+}

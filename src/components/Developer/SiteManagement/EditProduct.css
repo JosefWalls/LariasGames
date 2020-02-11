@@ -1,0 +1,26 @@
+.EditProductCard {
+    padding-top: 10vh;
+    background: #e9ecef;
+}
+
+.EditProductCard input {
+    width: 50vw;
+    margin: 1% 0% 1% 0%;
+}
+
+.EditProductCard section {
+    display: flex;
+    justify-content: center;
+}
+
+.EditProductInput {
+     border: 1px solid red;
+     display: grid;
+     grid-template-columns:  1fr;
+}
+
+.HeaderSection header {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}

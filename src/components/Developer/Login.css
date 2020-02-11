@@ -1,6 +1,5 @@
 .loginMain {
-  background: -webkit-gradient(linear, left top, right top, from(navy), color-stop(red), to(navy));
-  background: linear-gradient(to right, navy, red, navy);
+  background: #e9ecef;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,13 +34,13 @@
   width: 50%;
   margin: 0% 0% 0% 25%;
   border-radius: 5%;
-  font-family: 'Bangers', cursive;
   font-size: 1.5em;
-  border: none;
+  border: 1px solid grey;
+  padding-bottom: 2%;
 }
 
 .loginCard button:hover {
-  background: black;
+  background: red;
   border: none;
   color: white;
 }

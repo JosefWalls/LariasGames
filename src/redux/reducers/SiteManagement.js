@@ -18,6 +18,9 @@ const initialState = {
 
 const UPDATE_STATE = "UPDATE_STATE";
 const ADD_PRODUCT = "ADD_PRODUCT";
+const DELETE_PRODUCT = "DELETE_PRODUCT";
+const EDIT_PRODUCT = "EDIT_PRODUCT";
+const ADD_ANNOUNCEMENT = "ADD_ANNOUNCEMENT";
 
 export const updateState = (e) => {
     return {
@@ -44,6 +47,38 @@ export const addProduct = (Title, Category, Description, Header, Images, Feature
     }
 }
 
+export const deleteProduct = (scenarioId) => {
+    return {
+        type: DELETE_PRODUCT,
+        payload: axios.delete(`/Scenarios/Delete/${scenarioId}`)
+    }
+}
+
+export const editProduct = (scenarioId, Title, Description, Publisher, Price, Link, Header) => {
+    return {
+        type: EDIT_PRODUCT,
+        payload: axios.put(`/Scenarios/Edit/${scenarioId}`, {
+            Title: Title,
+            Description: Description,
+            Publisher: Publisher,
+            Price: Price,
+            Link: Link,
+            Header: Header
+        })
+    }
+}
+
+export const addAnnouncement = (Title, Header, Description, Link) => {
+    return {
+        type: ADD_ANNOUNCEMENT,
+        payload: axios.post("Announcements/AddAnnouncement", {
+            Title: Title,
+            Header: Header,
+            Description: Description,
+            link: Link
+        })
+    }
+}
 
 export default function reducer (state = initialState, action){
     const {type, payload} = action;
@@ -55,6 +90,18 @@ export default function reducer (state = initialState, action){
         case `${ADD_PRODUCT}_PENDING`:
             return {...state, loading: true}
         case `${ADD_PRODUCT}_FULFILLED`:
+            return {...state, loading: false}
+        case `${DELETE_PRODUCT}_PENDING`:
+            return {...state, loading: true}
+        case `${DELETE_PRODUCT}_FULFILLED`:
+            return {...state, loading: false}
+        case `${EDIT_PRODUCT}_PENDING`:
+            return {...state, loading: true}
+        case `${EDIT_PRODUCT}_FULFILLED`:
+            return {...state, loading: false}
+        case `${ADD_ANNOUNCEMENT}_PENDING`:
+            return {...state, loading: true}
+        case `${ADD_ANNOUNCEMENT}_FULFILLED`:
             return {...state, loading: false}
     }
 }

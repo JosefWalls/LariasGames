@@ -29,10 +29,12 @@ app.use(express.static(`${__dirname}/../build`));
 const ScenarioRouter = require("./routes/Scenarios");
 const DeveloperRouter = require("./routes/Developer");
 const RouteRouter = require("./routes/Route");
+const AnnouncementRouter = require("./routes/Announcement");
 
 app.use("/Scenarios", ScenarioRouter);
 app.use("/Developer", DeveloperRouter);
 app.use("/Routes", RouteRouter);
+app.use("/Announcements", AnnouncementRouter);
 
 
 app.listen(4040, () => console.log("Port 4040"))
