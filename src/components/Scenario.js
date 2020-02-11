@@ -2,7 +2,7 @@ import React from "react";
 import {connect} from "react-redux";
 import {getScenario} from "./../redux/reducers/Product";
 import "./Scenario.css";
-import {Carousel, Card} from "react-bootstrap";
+import {Card} from "react-bootstrap";
 
 class Scenario extends React.Component {
     constructor(){
