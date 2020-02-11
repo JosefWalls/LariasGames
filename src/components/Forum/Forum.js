@@ -1,7 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 import {getForum} from "./../../redux/reducers/Forum";
-
+import "./Forum.css";
 
 class Forum extends React.Component {
     constructor(){
@@ -16,9 +16,20 @@ class Forum extends React.Component {
 
 
     render() {
+        const forumHeader = this.props.Forum.map((val, i) => {
+            return (
+                <div className="ForumTopper">
+                    <header>
+                        <h6>{val.Title}</h6>
+                    </header>
+                </div>
+            )
+        })
         return (
-            <div>
-                <h1>Forum</h1>
+            <div className="ForumLandingMain">
+                <div className="ForumLandingCard">
+                    {forumHeader}
+                </div>
             </div>
         )
     }

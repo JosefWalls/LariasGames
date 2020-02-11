@@ -24,3 +24,20 @@
     justify-content: center;
     border: 1px solid black;
 }
+
+.EditProfileImages {
+    border: 1px solid gold;
+    display: flex;
+    justify-content: center;
+}
+
+.EditProfileImages section {
+    border: 1px solid khaki;
+    display: flex;
+    justify-content: center;
+}
+
+.EditProfileImages img {
+    height: 250px;
+    width: 350px;
+}

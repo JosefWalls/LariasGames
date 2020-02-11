@@ -2,7 +2,7 @@ import React from "react";
 import "./EditProduct.css";
 import {connect} from "react-redux";
 import {getScenario, updateState} from "./../../../redux/reducers/Product";
-import {editProduct} from "./../../../redux/reducers/SiteManagement";
+import {editProduct, deleteProduct} from "./../../../redux/reducers/SiteManagement";
 import {storage} from "./../../../firebase-config";
 
 class EditProductPage extends React.Component {
@@ -20,12 +20,7 @@ class EditProductPage extends React.Component {
         this.props.updateState({Link: Link});
         this.props.updateState({Header: Header});
         this.props.updateState({Images: Images});
-        console.log("Title" + this.props.product[0].Title)
-        console.log("Description" + this.props.product[0].Description)
-        console.log("Publisher" + this.props.product[0].Publisher)
-        console.log("Price" + this.props.product[0].Price)
-        console.log("Link" + this.props.product[0].Link)
-        console.log("Header" + this.props.product[0].Header)
+        console.log("Images" + this.props.product[0].Images)
     }
 
     handleInput = (e) => {
@@ -48,6 +43,21 @@ class EditProductPage extends React.Component {
         
     }
 
+    deleteProduct = async () => {
+        const ProductId = this.props.match.params.scenario_id;
+        await this.props.deleteProduct(ProductId)
+        .then(() => {
+            this.props.history.push("/Developer/Home")
+        })
+        .catch(err => {
+            alert("Something went wrong")
+        })
+    }
+
+    removeImage = (e) => {
+        console.log(e)
+    }
+
     submitChanges = (e) => {
         e.preventDefault();
         const {Title, Description, Publisher, Price, Link, Header} = this.props;
@@ -61,6 +71,17 @@ class EditProductPage extends React.Component {
     }
 
     render() {
+        const mappedImages = this.props.product.map((val, i) => {
+            return (
+                <div>
+                    {val.Images.map((val, i) => [
+                        <img src={val} onClick={function consoleIndex(i){
+                                console.log(i)
+                        }}></img>
+                    ])}
+                </div>
+            )
+        })
         return (
             <div className="EditProductCard">
                 <section>
@@ -78,6 +99,12 @@ class EditProductPage extends React.Component {
                     </header>
                     <input type="file" onChange={this.changeHeader}></input>
                 </section>
+                <div className="EditProfileImages">
+                    <section>
+                        {mappedImages}
+                    </section>
+                </div>
+                <button onClick={this.deleteProduct}>Remove Product From Store</button>
                 <button onClick={this.submitChanges}>Submit Changes</button>
             </div>
         )
@@ -100,4 +127,4 @@ const mapStateToProps = reduxState => {
     }
 }
 
-export default connect(mapStateToProps, {getScenario, updateState, editProduct})(EditProductPage);
+export default connect(mapStateToProps, {getScenario, updateState, editProduct, deleteProduct})(EditProductPage);
