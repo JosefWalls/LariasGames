@@ -10,18 +10,12 @@
     font-size: 1.5em;
 }
 
-#whatWeOffer {
-    display: flex;
-    margin-top: -10vh;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
-}
 .aboutCard footer {
     display: flex;
     justify-content: center;
 }
 
-.teamCard {
+.teamCard, .WhatWeOffer header  {
     display: flex;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
@@ -56,4 +50,30 @@
     text-decoration-color: grey;
     font-weight: bold;
     margin-bottom: 4%;
+}
+
+.WhatWeOffer {
+    margin-top: 10vh;
+    border: 1px solid grey; 
+}
+
+.WhatWeOffer header {
+    padding: 2vh 2vw 2vh 2vw;
+}
+
+.WhatWeOffer section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.WhatWeOffer section div {
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+
+.WhatWeOfferHeader {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: underline lightseagreen;
 }

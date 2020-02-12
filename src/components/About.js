@@ -46,6 +46,37 @@ class About extends React.Component {
                      </div>
                     </main>
                 </section>
+            <div className="WhatWeOffer">
+                <header>
+                    <h2>What We Offer</h2>
+                </header>
+                <section>
+                     <div>
+                        <Card>
+                         <Card.Body>
+                            <Card.Title><h1 className="WhatWeOfferHeader">Scenario Creation</h1></Card.Title>
+                            <Card.Text>His every day work is Web and Software development, and alongside that he loves Go Karting and Racing! Josef has been working with Trains and Drivers since 2015 to release several packs through Trainsim.store and Steam!</Card.Text>
+                         </Card.Body>
+                        </Card>
+                     </div>
+                     <div>
+                        <Card>
+                         <Card.Body>
+                            <Card.Title><h1 className="WhatWeOfferHeader">Asset Creation</h1></Card.Title>
+                            <Card.Text>His every day work is Web and Software development, and alongside that he loves Go Karting and Racing! Josef has been working with Trains and Drivers since 2015 to release several packs through Trainsim.store and Steam!</Card.Text>
+                         </Card.Body>
+                        </Card>
+                     </div>
+                     <div>
+                        <Card>
+                         <Card.Body>
+                            <Card.Title><h1 className="WhatWeOfferHeader">Route Building</h1></Card.Title>
+                            <Card.Text>His every day work is Web and Software development, and alongside that he loves Go Karting and Racing! Josef has been working with Trains and Drivers since 2015 to release several packs through Trainsim.store and Steam!</Card.Text>
+                         </Card.Body>
+                        </Card>
+                     </div>
+                </section>
+            </div>
             </div>
             </div>
         )

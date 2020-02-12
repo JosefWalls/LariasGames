@@ -10,17 +10,6 @@
   font-size: 1.5em;
 }
 
-#whatWeOffer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: -10vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Roboto', sans-serif;
-}
-
 .aboutCard footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,7 +19,7 @@
           justify-content: center;
 }
 
-.teamCard {
+.teamCard, .WhatWeOffer header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,5 +61,38 @@
           text-decoration-color: grey;
   font-weight: bold;
   margin-bottom: 4%;
+}
+
+.WhatWeOffer {
+  margin-top: 10vh;
+  border: 1px solid grey;
+}
+
+.WhatWeOffer header {
+  padding: 2vh 2vw 2vh 2vw;
+}
+
+.WhatWeOffer section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.WhatWeOffer section div {
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+}
+
+.WhatWeOfferHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  -webkit-text-decoration: underline lightseagreen;
+          text-decoration: underline lightseagreen;
 }
 /*# sourceMappingURL=About.css.map */

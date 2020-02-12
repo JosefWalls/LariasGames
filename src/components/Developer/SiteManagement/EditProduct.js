@@ -75,9 +75,7 @@ class EditProductPage extends React.Component {
             return (
                 <div>
                     {val.Images.map((val, i) => [
-                        <img src={val} onClick={function consoleIndex(i){
-                                console.log(i)
-                        }}></img>
+                        <img src={val} key={i}></img>
                     ])}
                 </div>
             )
