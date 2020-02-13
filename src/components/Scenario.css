@@ -1,96 +1,25 @@
 .ProductCard {
   padding-top: 11vh;
-  padding-bottom: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 5%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #e9ecef;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e9ecef), to(#e9ecef));
+  background: linear-gradient(#e9ecef, #e9ecef);
+}
+
+.ProductCard header {
   font-family: 'Roboto', sans-serif;
-}
-
-.smallerImages {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  width: 50vw;
-  margin-left: 1.5%;
-}
-
-.ProductImages {
-  border: 0.5px solid grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
   padding-bottom: 2%;
-  margin-left: 1%;
-}
-
-.ProductImages img {
-  height: 7.5vw;
-  width: 15vw;
-}
-
-.buttonImages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 2%;
-}
-
-.ProdutDescription {
-  width: 50vw;
-}
-
-#MainImage {
-  width: 50vw;
-  height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#MainImage img {
-  width: 90%;
-  height: 90%;
-}
-
-#CurrentImage {
-  opacity: 0.5;
-}
-
-.ProdutDescription header, .ProdutDescription main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ProdutDescription header {
   text-decoration: underline;
   -webkit-text-decoration-color: grey;
           text-decoration-color: grey;
-  font-weight: bold;
-  font-size: 2rem;
-  margin-bottom: 2%;
 }
 
-.ProdutDescription main {
+.ProductImages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,92 +28,14 @@
           justify-content: center;
 }
 
-.ProdutDescription main p {
-  width: 75%;
-  font-size: 1.25rem;
-}
-
-#publisher {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 2%;
-}
-
-#publisher p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.ProductFeatures {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-}
-
-.FeatureCard {
+.carouselCard img {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  border: 5px solid black;
+  margin-bottom: 5%;
 }
 
-.FeatureCard p {
-  width: 25vw;
-  margin: 10px 0 10px 0;
-}
-
-.ProductFooter {
-  margin-top: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 2rem;
-}
-
-.ProductFooter h2 {
-  border: 1px solid grey;
-  background: white;
-  color: blue;
-  padding: 5% 12% 5% 12%;
-}
-
-.buttonToPurchase {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 10%;
-  background: #e9ecef;
-}
-
-.buttonToPurchase button {
-  height: 5vh;
-  background: red;
-  border: none;
-  color: white;
-  font-size: 1.5rem;
-}
-
-.buttonToPurchase button:hover {
-  border: 1px solid red;
-  background: white;
-  color: black;
+.BackgroundOne {
+  border: 5px solid brown;
+  height: 100vh;
 }
 /*# sourceMappingURL=Scenario.css.map */

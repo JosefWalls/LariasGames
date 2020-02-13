@@ -1,6 +1,6 @@
 .aboutCard {
     padding-top: 2%;
-    background: #e9ecef;
+    background: linear-gradient(#e9ecef, #e9ecef, lightseagreen);
     font-family: 'Roboto', sans-serif;
     padding-bottom: 10vh;
 }
@@ -54,7 +54,6 @@
 
 .WhatWeOffer {
     margin-top: 10vh;
-    border: 1px solid grey; 
 }
 
 .WhatWeOffer header {
@@ -69,6 +68,7 @@
 .WhatWeOffer section div {
     margin-right: 2.5%;
     margin-left: 2.5%;
+    font-size: 1.5rem;
 }
 
 .WhatWeOfferHeader {

@@ -22,9 +22,9 @@
 
 .Announcement img {
     width: 20vw;
-    height: 450px;
-    margin-top: 2.5%;;
-    margin-right: 1.5%
+    height: 45vh;
+    margin-top: 1.5%;;
+    margin-right: 1.5%;
 }
 
 .Announcement section {
@@ -32,6 +32,7 @@
     border: 1px solid rgb(46, 46, 46);
     width: 50vw;
     height: 50vh;
+    margin-top: 2.5%;;
 }
 
 .Announcement section header {

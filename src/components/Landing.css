@@ -20,3 +20,9 @@
 .carouselCard {
     width: 65vw;
 }
+
+.carouselCard h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px black;
+}

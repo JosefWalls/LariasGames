@@ -9,7 +9,8 @@ class Products extends React.Component {
         super()
 
         this.state = {
-            FeatureInput: ""
+            FeatureInput: "",
+            TempImage: ""
         }
     }
     handleInput = (e) => {
@@ -43,10 +44,7 @@ class Products extends React.Component {
             uploadTask.on("state_changed", () => {
                 storage.ref('Products').child(image.name).getDownloadURL()
                 .then(url => {
-                    console.log("url", url)
-                    if(!this.props.Images.includes(url)){
-                        this.props.updateState({Images: this.props.Images.concat(url)})
-                    }
+                    this.setState({TempImage: url})
                 })
                 .catch(err => {
                     console.log(err)
@@ -79,6 +77,10 @@ class Products extends React.Component {
         e.preventDefault();
         this.setState({FeatureInput: e.target.value})
     }
+    addImage = () => {
+        console.log(this.state.TempImage)
+        this.props.updateState({Images: this.props.Images.concat(this.state.TempImage)})
+    }
 
     pullFeatureArray = () => {
             this.props.updateState({Features: this.props.Features.concat(this.state.FeatureInput)})
@@ -86,7 +88,8 @@ class Products extends React.Component {
 
     uploadScenarioPack = async(e) => {
         const {Title, Category, Description, Header, Images, Features, Publisher, Price, Link, Country} = this.props;
-        alert(this.props.Features)
+        // alert(this.props.Features)
+        console.log(Images)
             await this.props.addProduct(Title, Category, Description, Header, Images, Features, Publisher, Price, Link, Country)
             .then(() => {
                 alert("Added")
@@ -124,6 +127,7 @@ class Products extends React.Component {
                     <input placeholder="Header" onChange={this.uploadHeader} type="file"></input>
                     <h6>Upload Images:</h6>
                     <input placeholder="Images" name="Images" onChange={this.uploadImages} type="file"></input>
+                    <button onClick={this.addImage}>Add Image</button>
                     <textarea placeholder="Description" onChange={this.handleInput} name="Description" id="descriptionBox"></textarea>
                      <input placeholder="Features" name="Features"  onChange={this.addFeatures} ></input>
                     <div className="buttonContainer">

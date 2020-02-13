@@ -58,7 +58,6 @@ class Landing extends React.Component {
                 </section>
                 </div> 
                 <Announcement />
-                <ForumLanding />
                 </div>
         )
     }
