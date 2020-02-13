@@ -30,7 +30,7 @@ class Login extends React.Component {
             <div className="loginMain">
                 <div className="loginCard">
                     <input placeholder="Username" name="Username" onChange={this.handleChange}></input>
-                    <input placeholder="Password" name="Password" onChange={this.handleChange}></input>
+                    <input placeholder="Password" name="Password" onChange={this.handleChange} type="password"></input>
                     <button onClick={this.loginDeveloper}>Log in</button>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import {connect} from "react-redux";
 import {getScenario, updateState} from "./../../../redux/reducers/Product";
 import {editProduct, deleteProduct} from "./../../../redux/reducers/SiteManagement";
 import {storage} from "./../../../firebase-config";
+import Nav from "./../../Navbar";
 
 class EditProductPage extends React.Component {
     constructor(){
@@ -81,7 +82,9 @@ class EditProductPage extends React.Component {
             )
         })
         return (
-            <div className="EditProductCard">
+            <div>
+                <Nav />
+                <div className="EditProductCard">
                 <section>
                 <div className="EditProductInput">
                     <input placeholder="Title" name="Title" onChange={this.handleInput}></input>
@@ -104,6 +107,7 @@ class EditProductPage extends React.Component {
                 </div>
                 <button onClick={this.deleteProduct}>Remove Product From Store</button>
                 <button onClick={this.submitChanges}>Submit Changes</button>
+            </div>
             </div>
         )
     }

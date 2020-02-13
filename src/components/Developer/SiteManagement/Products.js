@@ -3,6 +3,7 @@ import {connect} from "react-redux";
 import {updateState, addProduct, addAnnouncement} from "../../../redux/reducers/SiteManagement";
 import {storage} from "../../../firebase-config";
 import "./Products.css";
+import Nav from "./../../Navbar";
 
 class Products extends React.Component {
     constructor(){
@@ -113,7 +114,9 @@ class Products extends React.Component {
 
     render() {
         return (
-            <div className="ProductsHome">
+            <div>
+                <Nav />
+                <div className="ProductsHome">
                 <div className="">
                     <select onChange={this.handleInput} name="Category">
                         <option>---</option>
@@ -158,6 +161,7 @@ class Products extends React.Component {
                 </div>
                 : null}
                 </div>
+            </div>
             </div>
         )
     }

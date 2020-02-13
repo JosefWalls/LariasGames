@@ -5,6 +5,7 @@ import {connect} from "react-redux";
 import {Card, Button} from "react-bootstrap";
 import {getAllScenarios} from "./../../redux/reducers/Product";
 import {deleteProduct} from "./../../redux/reducers/SiteManagement";
+import Nav from "./../Navbar";
 
 class Home extends React.Component {
     constructor(){
@@ -31,6 +32,7 @@ class Home extends React.Component {
         })
         return (
             <div>
+                <Nav />
             <div className="developerHome">
                 <section>
                     <Link to="/SiteManagement/Products">
