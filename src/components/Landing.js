@@ -31,9 +31,6 @@ class Landing extends React.Component {
                                 src="http://bit.ly/2UB6nOm"
                                 alt="First slide"
                             />
-                            <Carousel.Caption>
-                                <h3>Alaska Railroad Scenario Pack</h3>
-                            </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
@@ -41,9 +38,6 @@ class Landing extends React.Component {
                                 src="http://bit.ly/2OCmwiO"
                                 alt="First slide"
                             />
-                            <Carousel.Caption>
-                                <h3>Miami West Palm Scenario Pack</h3>
-                            </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
@@ -51,9 +45,6 @@ class Landing extends React.Component {
                                 src="http://bit.ly/39iz6LP"
                                 alt="First slide"
                             />
-                            <Carousel.Caption>
-                                <h3>Pacific Surfliner Scenario Pack</h3>
-                            </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
                     </div>

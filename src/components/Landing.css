@@ -1,6 +1,6 @@
 .landingCard {
     height: 100vh;
-    background: #e9ecef;
+    background: rgb(49, 49, 49);
     display: flex;
     justify-content: center;
     border-bottom: 5px solid gray;
@@ -21,8 +21,10 @@
     width: 65vw;
 }
 
+
 .carouselCard h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
     text-shadow: 1px 1px black;
+    padding-top: 5%;
+    font-size: 1.5rem;
 }

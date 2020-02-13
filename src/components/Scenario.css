@@ -21,15 +21,6 @@
   border-bottom: 5px solid lightseagreen;
 }
 
-.ProductMainInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .ProductImages {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,33 +38,30 @@
   margin-bottom: 5%;
 }
 
-.Background {
-  border: 5px solid brown;
-  height: 100vh;
-}
-
-.ProductDescription {
+.ProductMainInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.ProductMainInfo div {
   width: 50%;
-  margin-right: 5%;
 }
 
-.ProductDescription section {
+.ProductFeatures header {
+  margin-bottom: 2%;
+}
+
+.ProductDescription p {
   font-size: 1.5rem;
+  margin: 2% 2% 2% 2%;
 }
 
-.ProductDescription section p {
-  margin-top: 2.5%;
-}
-
-.ProductFeatures {
-  padding-top: 2.5%;
-  padding-bottom: 5%;
+.ProductFeature {
+  margin: 1% 0% 1% 0%;
 }
 
 .ProductFeatures div {
@@ -83,34 +71,19 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
-.ProductFeatures section {
+.ProductFeatures div section p {
+  font-size: 1.5rem;
+  margin: 1% 0% 1% 0%;
+}
+
+.ProductFeatures div section {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-}
-
-.ProductFeatures section div {
-  font-size: 1.5rem;
-  border-bottom: 1px solid grey;
-  margin: 1% 0% 1% 0%;
-}
-
-.ProductFeatures section div p {
-  padding-bottom: 2%;
-}
-
-.ProductFeatures footer {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .ProductCard footer {
@@ -120,24 +93,25 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: red;
+  margin-top: 5%;
 }
 
 .ProductCard footer button {
   height: 5vh;
   width: 25vw;
-  border: 3px solid lightseagreen;
+  background: lightseagreen;
   font-size: 1.5rem;
-  font-weight: bold;
+  border: 3px solid black;
+  color: white;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
 }
 
 .ProductCard footer button:hover {
-  background: lightseagreen;
-  color: white;
-  border: 3px solid black;
-}
-
-.ProductFeature p:nth-child(1) {
-  margin-top: 2.5%;
+  background: transparent;
+  color: black;
+  border: 3px solid lightseagreen;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
 }
 /*# sourceMappingURL=Scenario.css.map */

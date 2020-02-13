@@ -2,7 +2,7 @@ import React from "react";
 import {connect} from "react-redux";
 import {getScenario} from "./../redux/reducers/Product";
 import "./Scenario.css";
-import {Card, Carousel} from "react-bootstrap";
+import {Carousel, Card} from "react-bootstrap";
 import Nav from "./Navbar";
 
 class Scenario extends React.Component {
@@ -60,14 +60,14 @@ class Scenario extends React.Component {
                     <div className="ProductDescription">
                         <section>
                             <header>
-                                <p>Overview</p>
+                                <h6>Overview</h6>
                             </header>
                             <p>{val.Description}</p>
                         </section>
                     </div>
                     <div className="ProductFeatures">
                         <header>
-                            <p>Included in this Pack:</p>
+                            <h6>Included in this Pack:</h6>
                         </header>
                         <div>
                         <section>

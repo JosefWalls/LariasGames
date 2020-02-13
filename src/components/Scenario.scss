@@ -16,11 +16,6 @@
     border-bottom: 5px solid lightseagreen;
 }
 
-.ProductMainInfo {
-    display: flex;
-    justify-content: center;
-}
-
 .ProductImages {
     display: flex;
     justify-content: center;
@@ -34,78 +29,61 @@
     margin-bottom: 5%;
 }
 
-.Background {
-    border: 5px solid brown;
-    height: 100vh;
-}
-
-.ProductDescription {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin-right: 5%;
-}
-
-.ProductDescription section {
-    font-size: 1.5rem;
-}
-
-.ProductDescription section p {
-    margin-top: 2.5%;
-}
-
-.ProductFeatures {
-    padding-top: 2.5%;
-    padding-bottom: 5%;
-}
-
-.ProductFeatures div {
+.ProductMainInfo {
     display: flex;
     justify-content: center;
 }
 
-.ProductFeatures section {
-    display: grid;
-    grid-template-columns: 1fr;
+.ProductMainInfo div {
+    width: 50%
 }
 
-.ProductFeatures section div {
+.ProductFeatures header {
+    margin-bottom: 2%;
+}
+
+.ProductDescription p {
     font-size: 1.5rem;
-    border-bottom: 1px solid grey;
+    margin: 2% 2% 2% 2%;
+}
+
+.ProductFeature {
     margin: 1% 0% 1% 0%;
 }
 
-.ProductFeatures section div  p {
-    padding-bottom: 2%;
-}
-
-.ProductFeatures footer {
-    margin-top: 5%;
-    margin-bottom: 5%;
+.ProductFeatures div  {
     display: flex;
     justify-content: center;
+    width: 100%;
+}
+
+.ProductFeatures div section p {
+    font-size: 1.5rem;
+    margin: 1% 0% 1% 0%;
+}
+
+.ProductFeatures div  section {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .ProductCard footer {
     display: flex;
     justify-content: center;
-    color: red;
-}
-
-.ProductCard footer button {
-    height: 5vh;
-    width: 25vw;
-    border: 3px solid lightseagreen;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.ProductCard footer button:hover {
-    background: lightseagreen;
-    color: white;
-    border: 3px solid black;
-}
-
-.ProductFeature p:nth-child(1) {
-    margin-top: 2.5%;
+    margin-top: 5%;
+    button {
+        height: 5vh;
+        width: 25vw;
+        background: lightseagreen;
+        font-size: 1.5rem;
+        border: 3px solid black;
+        color: white;
+        transition-duration: 0.25s;
+    }
+    button:hover {
+        background: transparent;
+        color: black;
+        border: 3px solid lightseagreen;
+        transition-duration: 0.25s;
+    }
 }
