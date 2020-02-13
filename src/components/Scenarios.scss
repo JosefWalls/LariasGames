@@ -19,7 +19,7 @@
 }
 
 .individualProduct {
-    border: 1px solid grey;
+    border: 3px solid grey;
     width: 75%;
     margin: 10px 12.5% 10px 12.5%;
     padding: 1% 1% 1% 1%;
@@ -32,9 +32,8 @@
 }
 
 .individualProduct img:hover {
-    opacity: 0.5;
+    opacity: 0.75;
     transition-duration: 0.2s;
-    border: 12px solid red;
 }
 
 .individualProduct header {
