@@ -3,6 +3,7 @@ import {connect} from "react-redux";
 import {getScenario} from "./../redux/reducers/Product";
 import "./Scenario.css";
 import {Card, Carousel} from "react-bootstrap";
+import Nav from "./Navbar";
 
 class Scenario extends React.Component {
     constructor(){
@@ -55,19 +56,48 @@ class Scenario extends React.Component {
                         </Carousel>
                         </div>
                     </section>
-                    <div style={background-image: url(val.Images[2])}>
-                        <h1>TEst</h1>
+                    <div className="ProductMainInfo">
+                    <div className="ProductDescription">
+                        <section>
+                            <header>
+                                <p>Overview</p>
+                            </header>
+                            <p>{val.Description}</p>
+                        </section>
                     </div>
+                    <div className="ProductFeatures">
+                        <header>
+                            <p>Included in this Pack:</p>
+                        </header>
+                        <div>
+                        <section>
+                            {val.Features.map((val, i) => {
+                                return (
+                                    <div className="ProductFeature">
+                                        <p>{val}</p>
+                                    </div>
+                                )
+                            })}
+                        </section>
+                        </div>
+                    </div>
+                    </div>
+                        <footer>
+                            <a href={val.Link} target="_blank"><button>View Product</button></a>
+                        </footer>
                 </div>
             )
         })
         return (
-            <div className="scenarioCard">
+            <div>
+                <Nav />
+                <div className="scenarioCard">
                 <section>
                     <section className="mappedInfo">
                         {mappedInfo}
                     </section>
                 </section>
+                </div>
             </div>
         )
     }

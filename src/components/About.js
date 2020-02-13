@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import {Jumbotron, Container, Card} from "react-bootstrap";
+import Nav from "./Navbar";
 
 class About extends React.Component {
     constructor(){
@@ -11,6 +12,7 @@ class About extends React.Component {
     render() {
         return (
             <div>
+                <Nav />
                 <div className="aboutCard" id="About">
                 <div className="aboutMain">
                     <Jumbotron>

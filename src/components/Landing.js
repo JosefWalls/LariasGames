@@ -5,6 +5,7 @@ import {getAllScenarios} from "./../redux/reducers/Product";
 import {Carousel, Card} from "react-bootstrap";
 import Announcement from "./Announcement";
 import ForumLanding from "./Forum/Landing";
+import Nav from "./Navbar";
 
 class Landing extends React.Component {
     constructor(){
@@ -19,6 +20,7 @@ class Landing extends React.Component {
     render() {
         return (
                 <div>
+                <Nav />
                     <div className="landingCard">
                 <section>
                     <div className="carouselCard">

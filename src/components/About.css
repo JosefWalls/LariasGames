@@ -4,6 +4,7 @@
   background: linear-gradient(#e9ecef, #e9ecef, lightseagreen);
   font-family: 'Roboto', sans-serif;
   padding-bottom: 10vh;
+  overflow: hidden;
 }
 
 .aboutMain {
@@ -36,6 +37,8 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  position: relative;
+  overflow: hidden;
 }
 
 .teamCard div {

@@ -4,6 +4,7 @@ import {getAllScenarios, updateState} from "./../redux/reducers/Product";
 import "./Scenarios.css";
 import {Link} from "react-router-dom";
 import {Card} from "react-bootstrap";
+import Nav from "./Navbar";
 
 class Scenarios extends React.Component {
     constructor(){
@@ -31,6 +32,7 @@ class Scenarios extends React.Component {
         })
         return (
             <div>
+            <Nav />
                 <div className="productPage">
                     <div className="scenarioPage">
                         <div className="productCard">
