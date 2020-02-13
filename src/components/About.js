@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import {Jumbotron, Container, Card} from "react-bootstrap";
+import {Carousel, Card, Jumbotron, Container} from "react-bootstrap";
 import Nav from "./Navbar";
 
 class About extends React.Component {
