@@ -39,6 +39,7 @@
   opacity: 0.5;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
+  border: 12px solid red;
 }
 
 .individualProduct header {
