@@ -28,6 +28,12 @@
 .individualProduct img {
     height: 250px ;
     width: 100%;
+    transition-duration: 0.2s;
+}
+
+.individualProduct img:hover {
+    opacity: 0.5;
+    transition-duration: 0.2s;
 }
 
 .individualProduct header {

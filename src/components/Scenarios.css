@@ -31,6 +31,14 @@
 .individualProduct img {
   height: 250px;
   width: 100%;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.individualProduct img:hover {
+  opacity: 0.5;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 .individualProduct header {
