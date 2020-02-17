@@ -46,6 +46,20 @@ class Landing extends React.Component {
                                 alt="First slide"
                             />
                         </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src="http://bit.ly/2vJYXOs"
+                                alt="First slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src="http://bit.ly/39G3gZG"
+                                alt="First slide"
+                            />
+                        </Carousel.Item>
                     </Carousel>
                     </div>
                 </section>
