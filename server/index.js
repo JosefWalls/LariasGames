@@ -43,4 +43,4 @@ app.use("/Announcements", AnnouncementRouter);
 app.use("/Forum", ForumRouter);
 
 
-app.listen(4040, () => console.log("Port 4040"))
+app.listen(80, () => console.log("Port 80"))

@@ -1,0 +1,19 @@
+.FooterSection {
+    background: lightseagreen;
+    height: 20vh;
+}
+
+.FooterSection {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.FooterSection ul {
+    display: flex;
+    justify-content: center;
+}

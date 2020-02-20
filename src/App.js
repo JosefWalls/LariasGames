@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {HashRouter} from "react-router-dom";
 import routes from "./Routes";
+import Footer from "./components/Footer";
 
 class App extends React.Component {
   constructor(){
@@ -13,6 +14,7 @@ class App extends React.Component {
       <HashRouter>
     <div>
       {routes}
+      <Footer />
     </div>
     </HashRouter>
   );

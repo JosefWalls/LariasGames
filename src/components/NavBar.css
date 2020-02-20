@@ -15,7 +15,7 @@
     color: white;
     text-shadow: 1px 1px black;
     margin-left: 10vw;
-    font-size: 2.5rem;
+    font-size: 75px;
     font-family: 'Bangers', cursive;
 }
 
@@ -31,7 +31,7 @@
 .sectionsOnNav section {
     margin: 0vh 2vw 0vh 2vw;
     font-family: 'Bangers', cursive;
-    font-size: 2rem;
+    font-size: 60px;
     color: white;
     text-shadow: 1px 1px black;
     text-decoration: none;

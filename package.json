@@ -2,7 +2,7 @@
   "name": "lariasgamesportfolio",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:4040",
+  "proxy": "http://localhost:80",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",

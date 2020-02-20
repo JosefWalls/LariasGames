@@ -9,7 +9,7 @@
 
 .aboutMain {
   margin-top: 10vh;
-  font-size: 1.5em;
+  font-size: 40px;
 }
 
 .aboutCard footer {
@@ -47,7 +47,7 @@
 }
 
 .teamCard h1 {
-  font-size: 1.5rem;
+  font-size: 50px;
   margin-top: 2%;
 }
 
@@ -65,6 +65,7 @@
           text-decoration-color: grey;
   font-weight: bold;
   margin-bottom: 4%;
+  font-size: 30px;
 }
 
 .WhatWeOffer {
@@ -73,6 +74,7 @@
 
 .WhatWeOffer header {
   font-weight: bolder;
+  font-size: 50px;
   padding: 2vh 2vw 2vh 2vw;
 }
 
@@ -86,7 +88,7 @@
 .WhatWeOffer section div {
   margin-right: 2.5%;
   margin-left: 2.5%;
-  font-size: 1.5rem;
+  font-size: 40px;
 }
 
 .WhatWeOfferHeader {
