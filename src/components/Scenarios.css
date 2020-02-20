@@ -29,7 +29,7 @@
 }
 
 .individualProduct img {
-  height: 250px;
+  height: 350px;
   width: 100%;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
@@ -54,6 +54,10 @@
   margin: 1% 1% 1% 1%;
 }
 
+.individualProduct h5 {
+  font-size: 30px;
+}
+
 .individualProduct hover {
   opacity: 0.5;
 }
@@ -61,5 +65,53 @@
 #productPrice {
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 1750px) {
+  .productCard {
+    padding-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .individualProduct img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .productCard {
+    padding-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .individualProduct img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .productCard {
+    padding-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .individualProduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .individualProduct img {
+    height: 500px;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=Scenarios.css.map */
