@@ -92,12 +92,35 @@
     .ProductMainInfo {
         display: grid;
         grid-template-columns: 1fr;
-        justify-items: center;
-        width: 100%;
+        // justify-items: center;
         transition-duration: 1s;
     }
-    .ProductDescription {
+    .ProductDescription, .ProductFeatures {
         width: 100%;
         transition-duration: 1s;
+        width: auto;
+        p {
+            margin: 5% 5% 5% 5%;
+            width: 100vw;
+        }
+        header {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .ProductFeatures div section{
+        margin: 5% 5% 5% 5%;
+    }
+    .carouselCard {
+        width: 100vw;
+    }
+    .carouselCard img {
+        width: 100%;
+    }
+    .ProductCard footer {
+        button {
+            width: 100%;
+    }
     }
 }

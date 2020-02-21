@@ -121,15 +121,39 @@
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    justify-items: center;
-    width: 100%;
     -webkit-transition-duration: 1s;
             transition-duration: 1s;
   }
-  .ProductDescription {
+  .ProductDescription, .ProductFeatures {
     width: 100%;
     -webkit-transition-duration: 1s;
             transition-duration: 1s;
+    width: auto;
+  }
+  .ProductDescription p, .ProductFeatures p {
+    margin: 5% 5% 5% 5%;
+    width: 100vw;
+  }
+  .ProductDescription header, .ProductFeatures header {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ProductFeatures div section {
+    margin: 5% 5% 5% 5%;
+  }
+  .carouselCard {
+    width: 100vw;
+  }
+  .carouselCard img {
+    width: 100%;
+  }
+  .ProductCard footer button {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=Scenario.css.map */
