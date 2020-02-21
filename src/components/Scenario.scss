@@ -87,3 +87,17 @@
         transition-duration: 0.25s;
     }
 }
+
+@media (max-width: 1000px){
+    .ProductMainInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        width: 100%;
+        transition-duration: 1s;
+    }
+    .ProductDescription {
+        width: 100%;
+        transition-duration: 1s;
+    }
+}

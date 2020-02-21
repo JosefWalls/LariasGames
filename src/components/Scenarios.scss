@@ -72,6 +72,9 @@
 }
 
 @media (max-width: 1400px){
+    .productPage {
+        background: linear-gradient(lightseagreen, #e9ecef, lightseagreen);
+    }
     .productCard {
         padding-top: 50px;
         display: grid;

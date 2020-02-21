@@ -114,4 +114,22 @@
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
 }
+
+@media (max-width: 1000px) {
+  .ProductMainInfo {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .ProductDescription {
+    width: 100%;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+}
 /*# sourceMappingURL=Scenario.css.map */
