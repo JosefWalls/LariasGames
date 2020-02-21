@@ -9,7 +9,6 @@
 
 .AnnouncementCard {
     background: rgba(46, 46, 46, 0.76);
-    height: 75%;
     width: 75%;
 }
 
@@ -33,6 +32,7 @@
     width: 50vw;
     height: 50vh;
     margin-top: 2.5%;;
+    margin-bottom: 2.5%;
 }
 
 .Announcement section header {
@@ -75,4 +75,10 @@
     background: red;
     color: white;
     font-weight: normal;
+}
+
+@media (max-width: 1000px){
+    .Announcement {
+        border: 2px solid red;
+    }
 }
