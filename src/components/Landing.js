@@ -21,7 +21,7 @@ class Landing extends React.Component {
         return (
                 <div>
                 <Nav />
-                    <div className="landingCard">
+                <div className="landingCard">
                 <section>
                     <div className="carouselCard">
                     <Carousel>

@@ -21,8 +21,7 @@ class About extends React.Component {
                     Founded in 2019 by Josef Walls, the goal of <span> Larias Games </span> is to produce awesome add-ons and contribute to projects where help is needed!
                     We use programs such as 3DSMax and the in game tools to produce our add-ons. We are also looking to expand to new titles and genres in the coming future! We also offer third party services, such as Asset creation, Scenario creation and Route building!
                     </p>
-                    <p>We are looking to add talented and awesome creators to our team, so take a look at our opportunities here!</p>
-                        </Container>
+                    </Container>
                     </Jumbotron>
                 </div>
                 <section className="teamCard">

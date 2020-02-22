@@ -102,4 +102,20 @@
   -webkit-text-decoration: underline lightseagreen;
           text-decoration: underline lightseagreen;
 }
+
+@media (max-width: 1000px) {
+  .teamCard main, .WhatWeOffer section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .teamCard div {
+    width: 100vw;
+    margin-bottom: 10px;
+  }
+  .WhatWeOffer div {
+    margin-bottom: 10px;
+  }
+}
 /*# sourceMappingURL=About.css.map */

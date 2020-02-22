@@ -1,6 +1,6 @@
 .landingCard {
     height: 100vh;
-    background: rgb(49, 49, 49);
+    background: white;
     display: flex;
     justify-content: center;
     border-bottom: 5px solid gray;

@@ -1,6 +1,6 @@
 import React from "react";
 import {connect} from "react-redux";
-import {getAllScenarios, updateState} from "./../redux/reducers/Product";
+import {getAllScenarios, updateState} from "../redux/reducers/Product";
 import "./Scenarios.css";
 import {Link} from "react-router-dom";
 import Nav from "./Navbar";

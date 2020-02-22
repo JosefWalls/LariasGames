@@ -23,9 +23,9 @@ class NavBar extends React.Component {
                         <h3>Who We Are</h3>
                     </section>
                 </Link>
-                <Link to="/Scenarios">
+                <Link to="/Products">
                     <section>
-                        <h3>Our Projects</h3>
+                        <h3>Add Ons</h3>
                     </section>
                 </Link>
                 </div>

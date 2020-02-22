@@ -19,6 +19,7 @@
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-bottom: 2.655%;
+  border: 3px solid grey;
 }
 
 .individualProduct {
@@ -26,6 +27,8 @@
   width: 75%;
   margin: 10px 12.5% 10px 12.5%;
   padding: 1% 1% 1% 1%;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
 }
 
 .individualProduct img {

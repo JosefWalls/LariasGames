@@ -1,7 +1,7 @@
 .ProductCard {
     padding-top: 11vh;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(#e9ecef, #e9ecef);
+    background: #e9ecef;
     padding-bottom: 10vh;
 }
 
@@ -9,11 +9,12 @@
     margin-top: 2%;
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 50px;
     padding-bottom: 2%;
     position: relative;
     overflow: hidden;
     border-bottom: 5px solid lightseagreen;
+    font-weight: bold;
 }
 
 .ProductImages {

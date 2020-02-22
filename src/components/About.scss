@@ -83,3 +83,18 @@
     font-weight: bold;
     text-decoration: underline lightseagreen;
 }
+
+
+@media (max-width: 1000px){
+    .teamCard main, .WhatWeOffer section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .teamCard div{
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+    .WhatWeOffer div {
+        margin-bottom: 10px;
+    }
+}
