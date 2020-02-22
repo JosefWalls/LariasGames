@@ -11,7 +11,7 @@ class Footer extends React.Component {
             <div className="FooterSection">
                     <ul>
                         <li>Created by Larias Games</li>
-                        <li></li>
+                        <li>-</li>
                         <li>North Richland Hills, Texas</li>
                     </ul>
             </div>

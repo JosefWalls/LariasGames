@@ -2,7 +2,7 @@
     height: 10vh;
     position: fixed;
     color: red;
-    background: lightseagreen;
+    background: linear-gradient(lightseagreen, lightseagreen, lightseagreen, lightseagreen, transparent);
     width: 100%;
     display: flex;
     align-items: center;

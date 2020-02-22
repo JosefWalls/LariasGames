@@ -1,6 +1,6 @@
 .landingCard {
     height: 100vh;
-    background: white;
+    background: linear-gradient(lightseagreen, gray);
     display: flex;
     justify-content: center;
     border-bottom: 5px solid gray;
@@ -13,7 +13,7 @@
     position: absolute;
     left: 0px;
     right: 15px;
-    margin-top: 10vh;
+    margin-top: 7vh;
     padding-top: 5vh;
 }
 
