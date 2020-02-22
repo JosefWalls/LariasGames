@@ -46,14 +46,8 @@
 }
 @media (max-width: 1150px){
     .NavBar {
-        background: red;
+        background: lightseagreen;
         transition-duration: 1s;
-    }
-    #LariasGames {
-        display: flex;
-        justify-content: center;
-        border: 1px solid white;
-        width: 100%;
     }
     .sectionsOnNav section {
         display: none;

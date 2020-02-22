@@ -36,15 +36,6 @@ class About extends React.Component {
                          </Card.Body>
                         </Card>
                      </div>
-                     <div>
-                        <Card>
-                         <Card.Body>
-                            <Card.Title><h1>Josef Walls</h1></Card.Title>
-                            <Card.Subtitle><h6>Founder / Lead Developer</h6></Card.Subtitle>
-                            <Card.Text>His every day work is Web and Software development, and alongside that he loves Go Karting and Racing!</Card.Text>
-                         </Card.Body>
-                        </Card>
-                     </div>
                     </main>
                 </section>
             <div className="WhatWeOffer">
